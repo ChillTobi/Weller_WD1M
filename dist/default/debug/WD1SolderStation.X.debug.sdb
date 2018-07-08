@@ -1,0 +1,904 @@
+[p LITE_MODE AUTOSTATIC IEEE_DBL LFSROK ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 18F4620 ]
+[d frameptr 4065 ]
+"20 E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\apl/user.c
+[v _USER_Init USER_Init `A(v  1 e 1 0 ]
+"86
+[v _USER_Task USER_Task `A(v  1 e 1 0 ]
+"302
+[v _USER_GetSetpointValue USER_GetSetpointValue `A(ui  1 e 2 0 ]
+"318
+[v _USER_IncrementSetpoint USER_IncrementSetpoint `A(v  1 e 1 0 ]
+"328
+[v _USER_DecrementSetpoint USER_DecrementSetpoint `A(v  1 e 1 0 ]
+"337
+[v _USER_FastIncrementSetpoint USER_FastIncrementSetpoint `A(v  1 e 1 0 ]
+"354
+[v _USER_FastDecrementSetpoint USER_FastDecrementSetpoint `A(v  1 e 1 0 ]
+"370
+[v _USER_TemperatureFilter USER_TemperatureFilter `A(ui  1 e 2 0 ]
+"8 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\aldiv.c
+[v ___aldiv __aldiv `(l  1 e 4 0 ]
+"62 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\float.c
+[v ___ftpack __ftpack `(f  1 e 3 0 ]
+"86 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftadd.c
+[v ___ftadd __ftadd `(f  1 e 3 0 ]
+"54 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftdiv.c
+[v ___ftdiv __ftdiv `(f  1 e 3 0 ]
+"62 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftmul.c
+[v ___ftmul __ftmul `(f  1 e 3 0 ]
+"20 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftsub.c
+[v ___ftsub __ftsub `(f  1 e 3 0 ]
+"8 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lldiv.c
+[v ___lldiv __lldiv `(ul  1 e 4 0 ]
+"8 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lwdiv.c
+[v ___lwdiv __lwdiv `(ui  1 e 2 0 ]
+"8 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lwmod.c
+[v ___lwmod __lwmod `(ui  1 e 2 0 ]
+"10 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\sprcadd.c
+[v ___fladd __fladd `(d  1 e 4 0 ]
+"245
+[v ___flsub __flsub `(d  1 e 4 0 ]
+"11 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\sprcdiv.c
+[v ___fldiv __fldiv `(d  1 e 4 0 ]
+"8 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\sprcmul.c
+[v ___flmul __flmul `(d  1 e 4 0 ]
+"15 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\Umul16.c
+[v ___wmul __wmul `(ui  1 e 2 0 ]
+"15 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\Umul32.c
+[v ___lmul __lmul `(ul  1 e 4 0 ]
+"25 E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\hal/adc.c
+[v _ADC_Init ADC_Init `A(v  1 e 1 0 ]
+"42
+[v _ADC_GetTemperature ADC_GetTemperature `A(ui  1 e 2 0 ]
+"47
+[v _ADC_GetVoltageMV ADC_GetVoltageMV `A(ui  1 e 2 0 ]
+"52
+[v _ADC_GetVoltageFiltered ADC_GetVoltageFiltered `A(ui  1 e 2 0 ]
+"66
+[v _ADC_Task ADC_Task `A(v  1 e 1 0 ]
+"20 E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\hal/dio.c
+[v _GPIO_Init GPIO_Init `A(v  1 e 1 0 ]
+"18 E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\hal/i2c.c
+[v _I2C_Init I2C_Init `A(v  1 e 1 0 ]
+"34
+[v _I2C_Start I2C_Start `A(uc  1 e 1 0 ]
+"58
+[v _I2C_SendData I2C_SendData `A(uc  1 e 1 0 ]
+"73
+[v _I2C_Stop I2C_Stop `A(v  1 e 1 0 ]
+"20 E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\hal/nvm.c
+[v _NVM_Init NVM_Init `A(v  1 e 1 0 ]
+"38
+[v _NVM_Task NVM_Task `A(v  1 e 1 0 ]
+"140
+[v _NVM_Write NVM_Write `A(v  1 e 1 0 ]
+"148
+[v _NVM_Read NVM_Read `A(ui  1 e 2 0 ]
+"29 E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\hal/pwm.c
+[v _PWM_Task PWM_Task `A(v  1 e 1 0 ]
+"57
+[v _PWM_SetDutyCycle PWM_SetDutyCycle `A(v  1 e 1 0 ]
+"74
+[v _PWM_SetSyncTrigger PWM_SetSyncTrigger `A(v  1 e 1 0 ]
+"79
+[v _PWM_ResetSyncTrigger PWM_ResetSyncTrigger `A(v  1 e 1 0 ]
+"16 E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\hal/system.c
+[v _SYSTEM_Init SYSTEM_Init `A(v  1 e 1 0 ]
+"27
+[v _SYSTEM_EnableInterrupts SYSTEM_EnableInterrupts `A(v  1 e 1 0 ]
+"33
+[v _SYSTEM_DisableInterrupts SYSTEM_DisableInterrupts `A(v  1 e 1 0 ]
+"18 E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\hal/timer.c
+[v _TIMER_Init TIMER_Init `A(v  1 e 1 0 ]
+"37
+[v _TIMER_GetSysTick TIMER_GetSysTick `A(ul  1 e 4 0 ]
+"46
+[v _TIMER_IncrementSysTick TIMER_IncrementSysTick `A(v  1 e 1 0 ]
+"52
+[v _TIMER_GetSysTickFlag TIMER_GetSysTickFlag `A(uc  1 e 1 0 ]
+"57
+[v _TIMER_SetSysTickFlag TIMER_SetSysTickFlag `A(v  1 e 1 0 ]
+"62
+[v _TIMER_ResetSysTickFlag TIMER_ResetSysTickFlag `A(v  1 e 1 0 ]
+"25 E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\main.c
+[v _main main `A(i  1 e 2 0 ]
+"84
+[v _ISR ISR `IIA(v  1 e 1 0 ]
+"19 E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/buttons.c
+[v _BUTTONS_GetState BUTTONS_GetState `A(v  1 e 1 0 ]
+"31
+[v _BUTTONS_Task BUTTONS_Task `A(v  1 e 1 0 ]
+"28 E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/lcd.c
+[v _LCD_Init LCD_Init `A(v  1 e 1 0 ]
+"109
+[v _LCD_SetMainDigits LCD_SetMainDigits `A(v  1 e 1 0 ]
+"172
+[v _LCD_SetPresetDigits LCD_SetPresetDigits `A(v  1 e 1 0 ]
+"276
+[v _LCD_Bcd2Segment LCD_Bcd2Segment `A(uc  1 s 1 LCD_Bcd2Segment ]
+"390
+[v _LCD_Dec2Bcd LCD_Dec2Bcd `A(v  1 e 1 0 ]
+"410
+[v _LCD_SetIcons LCD_SetIcons `A(v  1 e 1 0 ]
+"431
+[v _LCD_SetData LCD_SetData `A(uc  1 s 1 LCD_SetData ]
+"461
+[v _LCD_GetData LCD_GetData `A(uc  1 s 1 LCD_GetData ]
+"477
+[v _LCD_Clear LCD_Clear `A(v  1 e 1 0 ]
+"487
+[v _LCD_Update LCD_Update `TA(v  1 e 1 0 ]
+"496
+[v _LCD_Task LCD_Task `A(v  1 e 1 0 ]
+"15 E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\apl/control.c
+[v _u16_ControlOutput u16_ControlOutput `Aui  1 s 2 u16_ControlOutput ]
+[s S761 . 10 `ui 1 CurrentTemperature 2 0 `ui 1 SetpointTemperature 2 2 `ui 1 PresetTemperature1 2 4 `ui 1 PresetTemperature2 2 6 `ui 1 PresetTemperature3 2 8 ]
+"16 E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\apl/user.c
+[v _t_Temperatures t_Temperatures `AS761  1 s 10 t_Temperatures ]
+[s S516 . 5 `uc 1 Up 1 0 `uc 1 Down 1 1 `uc 1 Temp1 1 2 `uc 1 Temp2 1 3 `uc 1 Temp3 1 4 ]
+"17
+[v _t_Buttons t_Buttons `AS516  1 s 5 t_Buttons ]
+"50 C:\Program Files (x86)\Microchip\xc8\v1.45\include\pic18f4620.h
+[v _PORTA PORTA `VEuc  1 e 1 @3968 ]
+"187
+[v _PORTB PORTB `VEuc  1 e 1 @3969 ]
+"358
+[v _PORTC PORTC `VEuc  1 e 1 @3970 ]
+[s S547 . 1 `uc 1 RC0 1 0 :1:0 
+`uc 1 RC1 1 0 :1:1 
+`uc 1 RC2 1 0 :1:2 
+`uc 1 RC3 1 0 :1:3 
+`uc 1 RC4 1 0 :1:4 
+`uc 1 RC5 1 0 :1:5 
+`uc 1 RC6 1 0 :1:6 
+`uc 1 RC7 1 0 :1:7 
+]
+"403
+[s S556 . 1 `uc 1 T1OSO 1 0 :1:0 
+`uc 1 T1OSI 1 0 :1:1 
+`uc 1 CCP1 1 0 :1:2 
+`uc 1 SCK 1 0 :1:3 
+`uc 1 SDI 1 0 :1:4 
+`uc 1 SDO 1 0 :1:5 
+`uc 1 TX 1 0 :1:6 
+`uc 1 RX 1 0 :1:7 
+]
+[s S565 . 1 `uc 1 T13CKI 1 0 :1:0 
+`uc 1 CCP2 1 0 :1:1 
+`uc 1 . 1 0 :1:2 
+`uc 1 SCL 1 0 :1:3 
+`uc 1 SDA 1 0 :1:4 
+`uc 1 . 1 0 :1:5 
+`uc 1 CK 1 0 :1:6 
+`uc 1 DT 1 0 :1:7 
+]
+[s S574 . 1 `uc 1 T1CKI 1 0 :1:0 
+]
+[s S576 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 PA2 1 0 :1:1 
+`uc 1 PA1 1 0 :1:2 
+]
+[u S580 . 1 `S547 1 . 1 0 `S556 1 . 1 0 `S565 1 . 1 0 `S574 1 . 1 0 `S576 1 . 1 0 ]
+[v _PORTCbits PORTCbits `VES580  1 e 1 @3970 ]
+"533
+[v _PORTD PORTD `VEuc  1 e 1 @3971 ]
+"878
+[v _LATA LATA `VEuc  1 e 1 @3977 ]
+[s S176 . 1 `uc 1 LATA0 1 0 :1:0 
+`uc 1 LATA1 1 0 :1:1 
+`uc 1 LATA2 1 0 :1:2 
+`uc 1 LATA3 1 0 :1:3 
+`uc 1 LATA4 1 0 :1:4 
+`uc 1 LATA5 1 0 :1:5 
+`uc 1 LATA6 1 0 :1:6 
+`uc 1 LATA7 1 0 :1:7 
+]
+"905
+[s S185 . 1 `uc 1 LA0 1 0 :1:0 
+`uc 1 LA1 1 0 :1:1 
+`uc 1 LA2 1 0 :1:2 
+`uc 1 LA3 1 0 :1:3 
+`uc 1 LA4 1 0 :1:4 
+`uc 1 LA5 1 0 :1:5 
+`uc 1 LA6 1 0 :1:6 
+`uc 1 LA7 1 0 :1:7 
+]
+[u S194 . 1 `S176 1 . 1 0 `S185 1 . 1 0 ]
+[v _LATAbits LATAbits `VES194  1 e 1 @3977 ]
+"990
+[v _LATB LATB `VEuc  1 e 1 @3978 ]
+"1102
+[v _LATC LATC `VEuc  1 e 1 @3979 ]
+"1214
+[v _LATD LATD `VEuc  1 e 1 @3980 ]
+[s S263 . 1 `uc 1 LATD0 1 0 :1:0 
+`uc 1 LATD1 1 0 :1:1 
+`uc 1 LATD2 1 0 :1:2 
+`uc 1 LATD3 1 0 :1:3 
+`uc 1 LATD4 1 0 :1:4 
+`uc 1 LATD5 1 0 :1:5 
+`uc 1 LATD6 1 0 :1:6 
+`uc 1 LATD7 1 0 :1:7 
+]
+"1241
+[s S272 . 1 `uc 1 LD0 1 0 :1:0 
+`uc 1 LD1 1 0 :1:1 
+`uc 1 LD2 1 0 :1:2 
+`uc 1 LD3 1 0 :1:3 
+`uc 1 LD4 1 0 :1:4 
+`uc 1 LD5 1 0 :1:5 
+`uc 1 LD6 1 0 :1:6 
+`uc 1 LD7 1 0 :1:7 
+]
+[u S281 . 1 `S263 1 . 1 0 `S272 1 . 1 0 ]
+[v _LATDbits LATDbits `VES281  1 e 1 @3980 ]
+"1378
+[v _TRISA TRISA `VEuc  1 e 1 @3986 ]
+"1600
+[v _TRISB TRISB `VEuc  1 e 1 @3987 ]
+"1822
+[v _TRISC TRISC `VEuc  1 e 1 @3988 ]
+"2044
+[v _TRISD TRISD `VEuc  1 e 1 @3989 ]
+[s S883 . 1 `uc 1 TMR1IE 1 0 :1:0 
+`uc 1 TMR2IE 1 0 :1:1 
+`uc 1 CCP1IE 1 0 :1:2 
+`uc 1 SSPIE 1 0 :1:3 
+`uc 1 TXIE 1 0 :1:4 
+`uc 1 RCIE 1 0 :1:5 
+`uc 1 ADIE 1 0 :1:6 
+`uc 1 PSPIE 1 0 :1:7 
+]
+"2517
+[s S892 . 1 `uc 1 . 1 0 :4:0 
+`uc 1 TX1IE 1 0 :1:4 
+`uc 1 RC1IE 1 0 :1:5 
+]
+[u S896 . 1 `S883 1 . 1 0 `S892 1 . 1 0 ]
+[v _PIE1bits PIE1bits `VES896  1 e 1 @3997 ]
+[s S94 . 1 `uc 1 TMR1IF 1 0 :1:0 
+`uc 1 TMR2IF 1 0 :1:1 
+`uc 1 CCP1IF 1 0 :1:2 
+`uc 1 SSPIF 1 0 :1:3 
+`uc 1 TXIF 1 0 :1:4 
+`uc 1 RCIF 1 0 :1:5 
+`uc 1 ADIF 1 0 :1:6 
+`uc 1 PSPIF 1 0 :1:7 
+]
+"2594
+[s S103 . 1 `uc 1 . 1 0 :4:0 
+`uc 1 TX1IF 1 0 :1:4 
+`uc 1 RC1IF 1 0 :1:5 
+]
+[u S107 . 1 `S94 1 . 1 0 `S103 1 . 1 0 ]
+[v _PIR1bits PIR1bits `VES107  1 e 1 @3998 ]
+"2924
+[v _EECON1 EECON1 `VEuc  1 e 1 @4006 ]
+[s S936 . 1 `uc 1 RD 1 0 :1:0 
+`uc 1 WR 1 0 :1:1 
+`uc 1 WREN 1 0 :1:2 
+`uc 1 WRERR 1 0 :1:3 
+`uc 1 FREE 1 0 :1:4 
+`uc 1 . 1 0 :1:5 
+`uc 1 CFGS 1 0 :1:6 
+`uc 1 EEPGD 1 0 :1:7 
+]
+"2945
+[s S945 . 1 `uc 1 . 1 0 :6:0 
+`uc 1 EEFS 1 0 :1:6 
+]
+[u S948 . 1 `S936 1 . 1 0 `S945 1 . 1 0 ]
+[v _EECON1bits EECON1bits `VES948  1 e 1 @4006 ]
+"2990
+[v _EECON2 EECON2 `VEuc  1 e 1 @4007 ]
+"2997
+[v _EEDATA EEDATA `VEuc  1 e 1 @4008 ]
+"3004
+[v _EEADR EEADR `VEuc  1 e 1 @4009 ]
+"4371
+[v _ADCON2 ADCON2 `VEuc  1 e 1 @4032 ]
+"4442
+[v _ADCON1 ADCON1 `VEuc  1 e 1 @4033 ]
+"4527
+[v _ADCON0 ADCON0 `VEuc  1 e 1 @4034 ]
+[s S303 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 GO_NOT_DONE 1 0 :1:1 
+]
+"4571
+[s S306 . 1 `uc 1 ADON 1 0 :1:0 
+`uc 1 GO_nDONE 1 0 :1:1 
+`uc 1 CHS 1 0 :4:2 
+]
+[s S310 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 GO 1 0 :1:1 
+`uc 1 CHS0 1 0 :1:2 
+`uc 1 CHS1 1 0 :1:3 
+`uc 1 CHS2 1 0 :1:4 
+`uc 1 CHS3 1 0 :1:5 
+]
+[s S317 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 DONE 1 0 :1:1 
+]
+[s S320 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 NOT_DONE 1 0 :1:1 
+]
+[s S323 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 nDONE 1 0 :1:1 
+]
+[s S326 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 GO_DONE 1 0 :1:1 
+]
+[s S329 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 GODONE 1 0 :1:1 
+]
+[u S332 . 1 `S303 1 . 1 0 `S306 1 . 1 0 `S310 1 . 1 0 `S317 1 . 1 0 `S320 1 . 1 0 `S323 1 . 1 0 `S326 1 . 1 0 `S329 1 . 1 0 ]
+[v _ADCON0bits ADCON0bits `VES332  1 e 1 @4034 ]
+"4646
+[v _ADRES ADRES `VEus  1 e 2 @4035 ]
+"4667
+[v _SSPCON2 SSPCON2 `VEuc  1 e 1 @4037 ]
+"4729
+[v _SSPCON1 SSPCON1 `VEuc  1 e 1 @4038 ]
+"4799
+[v _SSPSTAT SSPSTAT `VEuc  1 e 1 @4039 ]
+"5020
+[v _SSPADD SSPADD `VEuc  1 e 1 @4040 ]
+"5027
+[v _SSPBUF SSPBUF `VEuc  1 e 1 @4041 ]
+"5034
+[v _T2CON T2CON `VEuc  1 e 1 @4042 ]
+"5105
+[v _PR2 PR2 `VEuc  1 e 1 @4043 ]
+"5215
+[v _TMR2 TMR2 `VEuc  1 e 1 @4044 ]
+"5777
+[v _OSCCON OSCCON `VEuc  1 e 1 @4051 ]
+"6210
+[v _INTCON3 INTCON3 `VEuc  1 e 1 @4080 ]
+[s S132 . 1 `uc 1 INT1IF 1 0 :1:0 
+`uc 1 INT2IF 1 0 :1:1 
+`uc 1 . 1 0 :1:2 
+`uc 1 INT1IE 1 0 :1:3 
+`uc 1 INT2IE 1 0 :1:4 
+`uc 1 . 1 0 :1:5 
+`uc 1 INT1IP 1 0 :1:6 
+`uc 1 INT2IP 1 0 :1:7 
+]
+"6237
+[s S141 . 1 `uc 1 INT1F 1 0 :1:0 
+`uc 1 INT2F 1 0 :1:1 
+`uc 1 . 1 0 :1:2 
+`uc 1 INT1E 1 0 :1:3 
+`uc 1 INT2E 1 0 :1:4 
+`uc 1 . 1 0 :1:5 
+`uc 1 INT1P 1 0 :1:6 
+`uc 1 INT2P 1 0 :1:7 
+]
+[u S150 . 1 `S132 1 . 1 0 `S141 1 . 1 0 ]
+[v _INTCON3bits INTCON3bits `VES150  1 e 1 @4080 ]
+"6302
+[v _INTCON2 INTCON2 `VEuc  1 e 1 @4081 ]
+"6372
+[v _INTCON INTCON `VEuc  1 e 1 @4082 ]
+[s S451 . 1 `uc 1 RBIF 1 0 :1:0 
+`uc 1 INT0IF 1 0 :1:1 
+`uc 1 TMR0IF 1 0 :1:2 
+`uc 1 RBIE 1 0 :1:3 
+`uc 1 INT0IE 1 0 :1:4 
+`uc 1 TMR0IE 1 0 :1:5 
+`uc 1 PEIE_GIEL 1 0 :1:6 
+`uc 1 GIE_GIEH 1 0 :1:7 
+]
+"6404
+[s S460 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 INT0F 1 0 :1:1 
+`uc 1 T0IF 1 0 :1:2 
+`uc 1 . 1 0 :1:3 
+`uc 1 INT0E 1 0 :1:4 
+`uc 1 T0IE 1 0 :1:5 
+`uc 1 PEIE 1 0 :1:6 
+`uc 1 GIE 1 0 :1:7 
+]
+[s S469 . 1 `uc 1 . 1 0 :6:0 
+`uc 1 GIEL 1 0 :1:6 
+`uc 1 GIEH 1 0 :1:7 
+]
+[u S473 . 1 `S451 1 . 1 0 `S460 1 . 1 0 `S469 1 . 1 0 ]
+[v _INTCONbits INTCONbits `VES473  1 e 1 @4082 ]
+"7049
+[v _IOFS IOFS `VEb  1 e 0 @32410 ]
+"7343
+[v _PEN PEN `VEb  1 e 0 @32298 ]
+"7351
+[v _PLLEN PLLEN `VEb  1 e 0 @31966 ]
+"7543
+[v _SEN SEN `VEb  1 e 0 @32296 ]
+"7707
+[v _TMR2IP TMR2IP `VEb  1 e 0 @31993 ]
+"7761
+[v _TRISC3 TRISC3 `VEb  1 e 0 @31907 ]
+"7763
+[v _TRISC4 TRISC4 `VEb  1 e 0 @31908 ]
+"16 E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\hal/adc.c
+[v _u32_AdcLsb u32_AdcLsb `CAul  1 s 4 u32_AdcLsb ]
+"17
+[v _u16_AdcVoltageMV u16_AdcVoltageMV `Aui  1 s 2 u16_AdcVoltageMV ]
+"19
+[v _s16_TemperatureCelcius s16_TemperatureCelcius `Al  1 s 4 s16_TemperatureCelcius ]
+"20
+[v _u8_ErrorRegister u8_ErrorRegister `VAEuc  1 s 1 u8_ErrorRegister ]
+"85 E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\hal/adc.h
+[v _si32_TempSensorGain si32_TempSensorGain `CAl  1 e 4 0 ]
+"86
+[v _si32_TempSensorOffset si32_TempSensorOffset `CAl  1 e 4 0 ]
+"17 E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\hal/nvm.c
+[v _u16_NVM_WriteBuffer u16_NVM_WriteBuffer `A[5]ui  1 s 10 u16_NVM_WriteBuffer ]
+"18
+[v _u8_NVM_WriteRegister u8_NVM_WriteRegister `Auc  1 s 1 u8_NVM_WriteRegister ]
+"13 E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\hal/pwm.c
+[v _bFlag_SyncTrigger bFlag_SyncTrigger `Auc  1 s 1 bFlag_SyncTrigger ]
+"14
+[v _u16_SyncTime u16_SyncTime `Aui  1 s 2 u16_SyncTime ]
+"15
+[v _u8_DutyCycle u8_DutyCycle `Auc  1 s 1 u8_DutyCycle ]
+"12 E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\hal/timer.c
+[v _u32_SysTickCounter u32_SysTickCounter `Aul  1 s 4 u32_SysTickCounter ]
+"13
+[v _bFlag_SysTick bFlag_SysTick `Auc  1 s 1 bFlag_SysTick ]
+"18 E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\main.c
+[v _DebugVariable DebugVariable `VAEui  1 e 2 0 ]
+"12 E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/buttons.c
+[v _u8_ButtonSignal u8_ButtonSignal `A[5]uc  1 s 5 u8_ButtonSignal ]
+"13 E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/lcd.c
+[v _u8_LCD_Data u8_LCD_Data `A[16]uc  1 s 16 u8_LCD_Data ]
+"14
+[v _u8_LCD_Data_Ext u8_LCD_Data_Ext `A[16]uc  1 s 16 u8_LCD_Data_Ext ]
+"15
+[v _u8_LCD_State u8_LCD_State `Ai  1 s 2 u8_LCD_State ]
+"19
+[v _u8_LCD_ModeSet u8_LCD_ModeSet `CAuc  1 e 1 0 ]
+"20
+[v _u8_LCD_Blink u8_LCD_Blink `CAuc  1 e 1 0 ]
+"22
+[v _u8_LCD_DeviceSelect u8_LCD_DeviceSelect `CAuc  1 e 1 0 ]
+"23
+[v _u8_LCD_Datapointer u8_LCD_Datapointer `Auc  1 e 1 0 ]
+"25 E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\main.c
+[v _main main `A(i  1 e 2 0 ]
+{
+"31
+[v main@u8_TaskCounter100ms u8_TaskCounter100ms `uc  1 a 1 19 ]
+"29
+[v main@u32_TimeStamp u32_TimeStamp `VAEul  1 s 4 u32_TimeStamp ]
+"76
+} 0
+"86 E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\apl/user.c
+[v _USER_Task USER_Task `A(v  1 e 1 0 ]
+{
+"101
+[v USER_Task@u16_AdcPT20Voltage u16_AdcPT20Voltage `VEui  1 a 2 3 ]
+"88
+[v USER_Task@u8_ErroState u8_ErroState `Auc  1 s 1 u8_ErroState ]
+"89
+[v USER_Task@u16_TemporarySetpoint u16_TemporarySetpoint `Aui  1 s 2 u16_TemporarySetpoint ]
+"90
+[v USER_Task@u16_TemporaryCurrentTemperature u16_TemporaryCurrentTemperature `Aui  1 s 2 u16_TemporaryCurrentTemperature ]
+"92
+[v USER_Task@u16_TemporarySaveSetpoint u16_TemporarySaveSetpoint `Aui  1 s 2 u16_TemporarySaveSetpoint ]
+"93
+[v USER_Task@u16_SaveCurrentSettingCounter u16_SaveCurrentSettingCounter `Aui  1 s 2 u16_SaveCurrentSettingCounter ]
+"95
+[v USER_Task@u16_ShowCurrentSettingCounter u16_ShowCurrentSettingCounter `Aui  1 s 2 u16_ShowCurrentSettingCounter ]
+"96
+[v USER_Task@u8_DisplayChangeCounter u8_DisplayChangeCounter `Auc  1 s 1 u8_DisplayChangeCounter ]
+"98
+[v USER_Task@u32_WatchdogCounter u32_WatchdogCounter `VAEul  1 s 4 u32_WatchdogCounter ]
+"99
+[v USER_Task@bFlag_AutoOff bFlag_AutoOff `Auc  1 s 1 bFlag_AutoOff ]
+"297
+} 0
+"370
+[v _USER_TemperatureFilter USER_TemperatureFilter `A(ui  1 e 2 0 ]
+{
+"373
+[v USER_TemperatureFilter@u16_FilterTemporary u16_FilterTemporary `ui  1 a 2 22 ]
+"372
+[v USER_TemperatureFilter@u16_FilterArray u16_FilterArray `A[4]ui  1 s 8 u16_FilterArray ]
+"381
+} 0
+"42 E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\hal/adc.c
+[v _ADC_GetTemperature ADC_GetTemperature `A(ui  1 e 2 0 ]
+{
+"45
+} 0
+"318 E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\apl/user.c
+[v _USER_IncrementSetpoint USER_IncrementSetpoint `A(v  1 e 1 0 ]
+{
+"325
+} 0
+"337
+[v _USER_FastIncrementSetpoint USER_FastIncrementSetpoint `A(v  1 e 1 0 ]
+{
+"339
+[v USER_FastIncrementSetpoint@u8_FastIncrementCounter u8_FastIncrementCounter `Auc  1 s 1 u8_FastIncrementCounter ]
+"351
+} 0
+"354
+[v _USER_FastDecrementSetpoint USER_FastDecrementSetpoint `A(v  1 e 1 0 ]
+{
+"356
+[v USER_FastDecrementSetpoint@u8_FastDecrementCounter u8_FastDecrementCounter `Auc  1 s 1 u8_FastDecrementCounter ]
+"366
+} 0
+"328
+[v _USER_DecrementSetpoint USER_DecrementSetpoint `A(v  1 e 1 0 ]
+{
+"334
+} 0
+"57 E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\hal/pwm.c
+[v _PWM_SetDutyCycle PWM_SetDutyCycle `A(v  1 e 1 0 ]
+{
+[v PWM_SetDutyCycle@u16_DutyCycle u16_DutyCycle `ui  1 p 2 18 ]
+"66
+} 0
+"140 E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\hal/nvm.c
+[v _NVM_Write NVM_Write `A(v  1 e 1 0 ]
+{
+[v NVM_Write@u8_Address u8_Address `uc  1 a 1 wreg ]
+[v NVM_Write@u8_Address u8_Address `uc  1 a 1 wreg ]
+[v NVM_Write@u16_Data u16_Data `ui  1 p 2 18 ]
+"142
+[v NVM_Write@u8_Address u8_Address `uc  1 a 1 22 ]
+"144
+} 0
+"109 E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/lcd.c
+[v _LCD_SetMainDigits LCD_SetMainDigits `A(v  1 e 1 0 ]
+{
+"111
+[v LCD_SetMainDigits@u8_TempArray u8_TempArray `[3]uc  1 a 3 0 ]
+"109
+[v LCD_SetMainDigits@u16_MainData u16_MainData `ui  1 p 2 22 ]
+[v LCD_SetMainDigits@bFlag_Number bFlag_Number `uc  1 p 1 24 ]
+"168
+} 0
+"19 E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/buttons.c
+[v _BUTTONS_GetState BUTTONS_GetState `A(v  1 e 1 0 ]
+{
+[s S516 . 5 `uc 1 Up 1 0 `uc 1 Down 1 1 `uc 1 Temp1 1 2 `uc 1 Temp2 1 3 `uc 1 Temp3 1 4 ]
+[v BUTTONS_GetState@t_Buttons t_Buttons `*.39S516  1 p 2 18 ]
+"26
+} 0
+"47 E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\hal/adc.c
+[v _ADC_GetVoltageMV ADC_GetVoltageMV `A(ui  1 e 2 0 ]
+{
+"50
+} 0
+"20 E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\apl/user.c
+[v _USER_Init USER_Init `A(v  1 e 1 0 ]
+{
+"23
+[v USER_Init@u16_TempNvmData u16_TempNvmData `ui  1 a 2 5 ]
+"22
+[v USER_Init@u16_StartupCounter u16_StartupCounter `ui  1 a 2 3 ]
+"84
+} 0
+"148 E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\hal/nvm.c
+[v _NVM_Read NVM_Read `A(ui  1 e 2 0 ]
+{
+"150
+[v NVM_Read@u16_Temp u16_Temp `ui  1 a 2 20 ]
+"148
+[v NVM_Read@u16_Address u16_Address `ui  1 p 2 18 ]
+"167
+} 0
+"487 E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/lcd.c
+[v _LCD_Update LCD_Update `TA(v  1 e 1 0 ]
+{
+"493
+} 0
+"172
+[v _LCD_SetPresetDigits LCD_SetPresetDigits `A(v  1 e 1 0 ]
+{
+"174
+[v LCD_SetPresetDigits@u8_TempArray u8_TempArray `[3]uc  1 a 3 0 ]
+"172
+[v LCD_SetPresetDigits@u16_PresetData u16_PresetData `ui  1 p 2 22 ]
+[v LCD_SetPresetDigits@u8_Preset u8_Preset `uc  1 p 1 24 ]
+[v LCD_SetPresetDigits@bFlag_Number bFlag_Number `uc  1 p 1 25 ]
+"266
+} 0
+"390
+[v _LCD_Dec2Bcd LCD_Dec2Bcd `A(v  1 e 1 0 ]
+{
+[v LCD_Dec2Bcd@u16_DecimalData u16_DecimalData `ui  1 p 2 18 ]
+[v LCD_Dec2Bcd@ptrBCD ptrBCD `*.39uc  1 p 2 20 ]
+"404
+} 0
+"8 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lwmod.c
+[v ___lwmod __lwmod `(ui  1 e 2 0 ]
+{
+"11
+[v ___lwmod@counter counter `uc  1 a 1 11 ]
+"8
+[v ___lwmod@dividend dividend `ui  1 p 2 7 ]
+[v ___lwmod@divisor divisor `ui  1 p 2 9 ]
+"26
+} 0
+"8 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lwdiv.c
+[v ___lwdiv __lwdiv `(ui  1 e 2 0 ]
+{
+"11
+[v ___lwdiv@quotient quotient `ui  1 a 2 5 ]
+"12
+[v ___lwdiv@counter counter `uc  1 a 1 4 ]
+"8
+[v ___lwdiv@dividend dividend `ui  1 p 2 0 ]
+[v ___lwdiv@divisor divisor `ui  1 p 2 2 ]
+"31
+} 0
+"276 E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/lcd.c
+[v _LCD_Bcd2Segment LCD_Bcd2Segment `A(uc  1 s 1 LCD_Bcd2Segment ]
+{
+[v LCD_Bcd2Segment@u8_Data u8_Data `uc  1 a 1 wreg ]
+[v LCD_Bcd2Segment@u8_Data u8_Data `uc  1 a 1 wreg ]
+[v LCD_Bcd2Segment@u8_DigitType u8_DigitType `uc  1 p 1 18 ]
+[v LCD_Bcd2Segment@u8_Data u8_Data `uc  1 a 1 19 ]
+"382
+} 0
+"410
+[v _LCD_SetIcons LCD_SetIcons `A(v  1 e 1 0 ]
+{
+[v LCD_SetIcons@u8_Icon u8_Icon `uc  1 a 1 wreg ]
+"412
+[v LCD_SetIcons@u8_Temp u8_Temp `uc  1 a 1 23 ]
+"410
+[v LCD_SetIcons@u8_Icon u8_Icon `uc  1 a 1 wreg ]
+"412
+[v LCD_SetIcons@u8_Icon u8_Icon `uc  1 a 1 22 ]
+"422
+} 0
+"461
+[v _LCD_GetData LCD_GetData `A(uc  1 s 1 LCD_GetData ]
+{
+[v LCD_GetData@u8_Position u8_Position `uc  1 a 1 wreg ]
+[v LCD_GetData@u8_Position u8_Position `uc  1 a 1 wreg ]
+"463
+[v LCD_GetData@u8_Position u8_Position `uc  1 a 1 20 ]
+"471
+} 0
+"477
+[v _LCD_Clear LCD_Clear `A(v  1 e 1 0 ]
+{
+"479
+[v LCD_Clear@u8_Temp u8_Temp `uc  1 a 1 22 ]
+"484
+} 0
+"62 E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\hal/timer.c
+[v _TIMER_ResetSysTickFlag TIMER_ResetSysTickFlag `A(v  1 e 1 0 ]
+{
+"65
+} 0
+"18
+[v _TIMER_Init TIMER_Init `A(v  1 e 1 0 ]
+{
+"33
+} 0
+"52
+[v _TIMER_GetSysTickFlag TIMER_GetSysTickFlag `A(uc  1 e 1 0 ]
+{
+"55
+} 0
+"16 E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\hal/system.c
+[v _SYSTEM_Init SYSTEM_Init `A(v  1 e 1 0 ]
+{
+"25
+} 0
+"29 E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\hal/pwm.c
+[v _PWM_Task PWM_Task `A(v  1 e 1 0 ]
+{
+"31
+[v PWM_Task@u8_PwmCounter u8_PwmCounter `Auc  1 s 1 u8_PwmCounter ]
+"32
+[v PWM_Task@u8_PeriodCount u8_PeriodCount `Auc  1 s 1 u8_PeriodCount ]
+"54
+} 0
+"79
+[v _PWM_ResetSyncTrigger PWM_ResetSyncTrigger `A(v  1 e 1 0 ]
+{
+"82
+} 0
+"38 E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\hal/nvm.c
+[v _NVM_Task NVM_Task `A(v  1 e 1 0 ]
+{
+"40
+[v NVM_Task@bFlag_StateWriteLowByte bFlag_StateWriteLowByte `Auc  1 s 1 bFlag_StateWriteLowByte ]
+"41
+[v NVM_Task@u8_TempWriteFlag u8_TempWriteFlag `Auc  1 s 1 u8_TempWriteFlag ]
+"42
+[v NVM_Task@u16_TempWriteData u16_TempWriteData `Aui  1 s 2 u16_TempWriteData ]
+"43
+[v NVM_Task@u16_TempAddress u16_TempAddress `Aui  1 s 2 u16_TempAddress ]
+"135
+} 0
+"27 E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\hal/system.c
+[v _SYSTEM_EnableInterrupts SYSTEM_EnableInterrupts `A(v  1 e 1 0 ]
+{
+"31
+} 0
+"33
+[v _SYSTEM_DisableInterrupts SYSTEM_DisableInterrupts `A(v  1 e 1 0 ]
+{
+"37
+} 0
+"20 E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\hal/nvm.c
+[v _NVM_Init NVM_Init `A(v  1 e 1 0 ]
+{
+"22
+[v NVM_Init@u16_TempData u16_TempData `ui  1 a 2 18 ]
+"31
+} 0
+"496 E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/lcd.c
+[v _LCD_Task LCD_Task `A(v  1 e 1 0 ]
+{
+"498
+[v LCD_Task@u8_LCD_DataCounter u8_LCD_DataCounter `Auc  1 s 1 u8_LCD_DataCounter ]
+"499
+[v LCD_Task@u8_Status u8_Status `Auc  1 s 1 u8_Status ]
+"500
+[v LCD_Task@bFlag_SecondaryData bFlag_SecondaryData `Auc  1 s 1 bFlag_SecondaryData ]
+"542
+} 0
+"28
+[v _LCD_Init LCD_Init `A(v  1 e 1 0 ]
+{
+"30
+[v LCD_Init@u8_Temp u8_Temp `uc  1 a 1 28 ]
+"74
+} 0
+"431
+[v _LCD_SetData LCD_SetData `A(uc  1 s 1 LCD_SetData ]
+{
+[v LCD_SetData@u8_Data u8_Data `uc  1 a 1 wreg ]
+[v LCD_SetData@u8_Data u8_Data `uc  1 a 1 wreg ]
+[v LCD_SetData@u8_Position u8_Position `uc  1 p 1 18 ]
+"433
+[v LCD_SetData@u8_Data u8_Data `uc  1 a 1 21 ]
+"458
+} 0
+"73 E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\hal/i2c.c
+[v _I2C_Stop I2C_Stop `A(v  1 e 1 0 ]
+{
+"76
+} 0
+"34
+[v _I2C_Start I2C_Start `A(uc  1 e 1 0 ]
+{
+[v I2C_Start@u8_Address u8_Address `uc  1 a 1 wreg ]
+"36
+[v I2C_Start@u16_Timeout u16_Timeout `ui  1 a 2 25 ]
+"34
+[v I2C_Start@u8_Address u8_Address `uc  1 a 1 wreg ]
+"36
+[v I2C_Start@u8_Address u8_Address `uc  1 a 1 24 ]
+"55
+} 0
+"37 E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\hal/timer.c
+[v _TIMER_GetSysTick TIMER_GetSysTick `A(ul  1 e 4 0 ]
+{
+"40
+} 0
+"58 E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\hal/i2c.c
+[v _I2C_SendData I2C_SendData `A(uc  1 e 1 0 ]
+{
+[v I2C_SendData@u8_Data u8_Data `uc  1 a 1 wreg ]
+[v I2C_SendData@u8_Data u8_Data `uc  1 a 1 wreg ]
+"60
+[v I2C_SendData@u8_Data u8_Data `uc  1 a 1 19 ]
+"69
+} 0
+"18
+[v _I2C_Init I2C_Init `A(v  1 e 1 0 ]
+{
+"31
+} 0
+"20 E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\hal/dio.c
+[v _GPIO_Init GPIO_Init `A(v  1 e 1 0 ]
+{
+"50
+} 0
+"31 E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/buttons.c
+[v _BUTTONS_Task BUTTONS_Task `A(v  1 e 1 0 ]
+{
+"38
+[v BUTTONS_Task@u8_ButtonsTemporaryInput u8_ButtonsTemporaryInput `uc  1 a 1 18 ]
+"35
+[v BUTTONS_Task@u16_ButtonsDebounceCounter u16_ButtonsDebounceCounter `A[8]ui  1 s 16 u16_ButtonsDebounceCounter ]
+"36
+[v BUTTONS_Task@u16_ButtonsHoldCounter u16_ButtonsHoldCounter `A[8]ui  1 s 16 u16_ButtonsHoldCounter ]
+"37
+[v BUTTONS_Task@u8_ButtonsStatusPressed u8_ButtonsStatusPressed `Auc  1 s 1 u8_ButtonsStatusPressed ]
+"218
+} 0
+"66 E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\hal/adc.c
+[v _ADC_Task ADC_Task `A(v  1 e 1 0 ]
+{
+"68
+[v ADC_Task@si32_AdcTemporary si32_AdcTemporary `l  1 a 4 10 ]
+"69
+[v ADC_Task@u16_AdcResult u16_AdcResult `ui  1 a 2 8 ]
+"94
+} 0
+"8 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lldiv.c
+[v ___lldiv __lldiv `(ul  1 e 4 0 ]
+{
+"11
+[v ___lldiv@quotient quotient `ul  1 a 4 34 ]
+"12
+[v ___lldiv@counter counter `uc  1 a 1 38 ]
+"8
+[v ___lldiv@dividend dividend `ul  1 p 4 26 ]
+[v ___lldiv@divisor divisor `ul  1 p 4 30 ]
+"31
+} 0
+"52 E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\hal/adc.c
+[v _ADC_GetVoltageFiltered ADC_GetVoltageFiltered `A(ui  1 e 2 0 ]
+{
+"54
+[v ADC_GetVoltageFiltered@s32_FilterTemporary s32_FilterTemporary `l  1 a 4 22 ]
+"52
+[v ADC_GetVoltageFiltered@u16_Input u16_Input `ui  1 p 2 18 ]
+"55
+[v ADC_GetVoltageFiltered@u16_OutputBefore u16_OutputBefore `Aui  1 s 2 u16_OutputBefore ]
+"61
+} 0
+"15 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\Umul32.c
+[v ___lmul __lmul `(ul  1 e 4 0 ]
+{
+"17
+[v ___lmul@product product `ul  1 a 4 8 ]
+"15
+[v ___lmul@multiplier multiplier `ul  1 p 4 0 ]
+[v ___lmul@multiplicand multiplicand `ul  1 p 4 4 ]
+"129
+} 0
+"8 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\aldiv.c
+[v ___aldiv __aldiv `(l  1 e 4 0 ]
+{
+"11
+[v ___aldiv@quotient quotient `l  1 a 4 22 ]
+"12
+[v ___aldiv@sign sign `uc  1 a 1 21 ]
+[v ___aldiv@counter counter `uc  1 a 1 20 ]
+"8
+[v ___aldiv@dividend dividend `l  1 p 4 12 ]
+[v ___aldiv@divisor divisor `l  1 p 4 16 ]
+"42
+} 0
+"25 E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\hal/adc.c
+[v _ADC_Init ADC_Init `A(v  1 e 1 0 ]
+{
+"38
+} 0
+"84 E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\main.c
+[v _ISR ISR `IIA(v  1 e 1 0 ]
+{
+"102
+} 0
+"57 E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\hal/timer.c
+[v _TIMER_SetSysTickFlag TIMER_SetSysTickFlag `A(v  1 e 1 0 ]
+{
+"60
+} 0
+"46
+[v _TIMER_IncrementSysTick TIMER_IncrementSysTick `A(v  1 e 1 0 ]
+{
+"49
+} 0
+"74 E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\hal/pwm.c
+[v _PWM_SetSyncTrigger PWM_SetSyncTrigger `A(v  1 e 1 0 ]
+{
+"77
+} 0

@@ -1,0 +1,1829 @@
+%CMF
+# %PSECTS Section
+# For each object file, details of its psects are enumerated here.
+# The begining of the section is indicated by %PSECTS.  The first
+# line indicates the name of the first object file, e.g.
+#    $foo.obj
+# Each line that follows describes a psect in that object file, until
+# the next object file.  The lines that describe a psect have the
+# format:
+#    <psect name> <class name> <space> <link address> <load addresses> <length> <delta>
+# All addresses and the length are given in unqualified hexadecimal
+# in delta units.  Any other numeric values are decimal.
+%PSECTS
+$dist/default/debug\startup.obj
+init CODE 0 E E 4 1
+reset_vec CODE 0 0 0 6 1
+config CONFIG 0 300000 300000 E 1
+$dist/default/debug\WD1SolderStation.X.debug.obj
+cinit CODE 0 2AE4 2AE4 22 1
+intcode_body CODE 0 23BE 23BE B0 1
+text0 CODE 0 2702 2702 6A 1
+text1 CODE 0 1014 1014 3D8 1
+text2 CODE 0 261C 261C 7A 1
+text3 CODE 0 2C38 2C38 A 1
+text4 CODE 0 2B28 2B28 20 1
+text5 CODE 0 2A56 2A56 32 1
+text6 CODE 0 2ABA 2ABA 2A 1
+text7 CODE 0 2BC2 2BC2 18 1
+text8 CODE 0 2B68 2B68 1E 1
+text9 CODE 0 29DE 29DE 3E 1
+text10 CODE 0 2012 2012 13E 1
+text11 CODE 0 276C 276C 56 1
+text12 CODE 0 2C42 2C42 A 1
+text13 CODE 0 1D7A 1D7A 14C 1
+text14 CODE 0 2818 2818 54 1
+text15 CODE 0 2BDA 2BDA 16 1
+text16 CODE 0 1890 1890 1F6 1
+text17 CODE 0 246E 246E A8 1
+text18 CODE 0 295C 295C 42 1
+text19 CODE 0 286C 286C 52 1
+text20 CODE 0 1EC6 1EC6 14C 1
+text21 CODE 0 2A1C 2A1C 3A 1
+text22 CODE 0 2A88 2A88 32 1
+text23 CODE 0 2B48 2B48 20 1
+text24 CODE 0 2C4C 2C4C 8 1
+text25 CODE 0 2BF0 2BF0 14 1
+text26 CODE 0 2C6C 2C6C 6 1
+text27 CODE 0 2C04 2C04 12 1
+text28 CODE 0 2696 2696 6C 1
+text29 CODE 0 2C54 2C54 8 1
+text30 CODE 0 1C18 1C18 162 1
+text31 CODE 0 2C72 2C72 6 1
+text32 CODE 0 2C78 2C78 6 1
+text33 CODE 0 2910 2910 4C 1
+text34 CODE 0 2150 2150 D6 1
+text35 CODE 0 1A86 1A86 192 1
+text36 CODE 0 28BE 28BE 52 1
+text37 CODE 0 2C7E 2C7E 4 1
+text38 CODE 0 2516 2516 84 1
+text39 CODE 0 2C16 2C16 12 1
+text40 CODE 0 2B06 2B06 22 1
+text41 CODE 0 2B86 2B86 1E 1
+text42 CODE 0 299E 299E 40 1
+text43 CODE 0 13EC 13EC 288 1
+text44 CODE 0 1674 1674 21C 1
+text45 CODE 0 259A 259A 82 1
+text46 CODE 0 2226 2226 CC 1
+text47 CODE 0 27C2 27C2 56 1
+text48 CODE 0 22F2 22F2 CC 1
+text49 CODE 0 2BA4 2BA4 1E 1
+text51 CODE 0 2C5C 2C5C 8 1
+text52 CODE 0 2C28 2C28 10 1
+text53 CODE 0 2C64 2C64 8 1
+cstackCOMRAM COMRAM 1 1 1 27 1
+cstackBANK0 BANK0 1 D1 D1 1D 1
+cstackBANK1 BANK1 1 15F 15F 14 1
+temp COMRAM 1 28 28 1 1
+bssBANK0 BANK0 1 80 80 51 1
+bssBANK1 BANK1 1 100 100 5F 1
+intcode CODE 0 8 8 6 1
+smallconst SMALLCONST 0 1000 1000 14 1
+# %UNUSED Section
+# This section enumerates the unused ranges of each CLASS. Each entry
+# is described on a single line as follows:
+#    <class name> <range> <delta>
+# Addresses given in the range are in hexadecimal and units of delta.
+%UNUSED
+RAM EE-FF 1
+RAM 173-EEE 1
+RAM F00-F7F 1
+SFR F80-F9B 1
+SFR F9D-FD3 1
+SFR FD5-FDA 1
+SFR FE0-FE2 1
+SFR FE8-FEA 1
+SFR FF0-FFB 1
+BANK0 EE-FF 1
+BANK1 173-1FF 1
+BANK2 200-2FF 1
+BANK3 300-3FF 1
+BANK4 400-4FF 1
+BANK5 500-5FF 1
+BANK6 600-6FF 1
+BANK7 700-7FF 1
+BANK8 800-8FF 1
+BANK9 900-9FF 1
+CONST 6-7 1
+CONST 12-FFF 1
+CONST 2C82-FCFF 1
+IDLOC 200000-200007 1
+STACK 173-EEE 1
+SMALLCONST 2C82-FCFF 1
+CODE 6-7 1
+CODE 12-FFF 1
+CODE 2C82-FCFF 1
+BANK10 A00-AFF 1
+BANK11 B00-BFF 1
+BANK12 C00-CFF 1
+BANK13 D00-DFF 1
+BANK14 E00-EEE 1
+BANK15 F00-F7F 1
+BIGRAM 29-7F 1
+BIGRAM EE-FF 1
+BIGRAM 173-EEE 1
+BIGRAM F00-F7F 1
+COMRAM 29-7F 1
+EEDATA F00000-F003FF 1
+MEDIUMCONST 2C82-FCFF 1
+# %LINETAB Section
+# This section enumerates the file/line to address mappings.
+# The beginning of the section is indicated by %LINETAB.
+# The first line indicates the name of the first object file, e.g.
+#   $foo.obj
+# Each line that follows describes a single mapping until the next
+# object file.  Mappings have the following format:
+#    <address> <psect name> <class name> ><line number>:<file name>
+# The address is absolute and given given in unqualified hex 
+# in delta units of the psect. All mappings within an object file
+# are in ascending order of addresses.
+# All other numeric values are in decimal.
+%LINETAB
+$dist/default/debug\startup.obj
+0 text CODE >71:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\dist/default/debug\startup.as
+0 text CODE >72:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\dist/default/debug\startup.as
+0 text CODE >73:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\dist/default/debug\startup.as
+0 text CODE >75:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\dist/default/debug\startup.as
+E init CODE >143:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\dist/default/debug\startup.as
+E init CODE >145:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\dist/default/debug\startup.as
+0 reset_vec CODE >117:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\dist/default/debug\startup.as
+0 reset_vec CODE >118:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\dist/default/debug\startup.as
+2 reset_vec CODE >124:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\dist/default/debug\startup.as
+$dist/default/debug\WD1SolderStation.X.debug.obj
+8 intcode CODE >38:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\hal/adc.c
+8 intcode CODE >84:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\main.c
+2C64 text53 CODE >74:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\hal/pwm.c
+2C64 text53 CODE >76:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\hal/pwm.c
+2C6A text53 CODE >77:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\hal/pwm.c
+2C28 text52 CODE >46:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\hal/timer.c
+2C28 text52 CODE >48:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\hal/timer.c
+2C36 text52 CODE >49:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\hal/timer.c
+2C5C text51 CODE >57:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\hal/timer.c
+2C5C text51 CODE >59:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\hal/timer.c
+2C62 text51 CODE >60:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\hal/timer.c
+23BE intcode_body CODE >84:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\main.c
+2408 intcode_body CODE >87:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\main.c
+240C intcode_body CODE >89:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\main.c
+240E intcode_body CODE >90:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\main.c
+2412 intcode_body CODE >91:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\main.c
+2416 intcode_body CODE >92:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\main.c
+2416 intcode_body CODE >95:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\main.c
+241A intcode_body CODE >97:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\main.c
+241C intcode_body CODE >98:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\main.c
+2420 intcode_body CODE >100:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\main.c
+2422 intcode_body CODE >101:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\main.c
+2422 intcode_body CODE >102:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\main.c
+2BA4 text49 CODE >25:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\hal/adc.c
+2BA4 text49 CODE >27:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\hal/adc.c
+2BA8 text49 CODE >28:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\hal/adc.c
+2BAC text49 CODE >29:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\hal/adc.c
+2BB0 text49 CODE >31:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\hal/adc.c
+2BB4 text49 CODE >33:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\hal/adc.c
+2BB8 text49 CODE >35:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\hal/adc.c
+2BBA text49 CODE >36:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\hal/adc.c
+2BBE text49 CODE >37:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\hal/adc.c
+2BC0 text49 CODE >38:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\hal/adc.c
+22F2 text48 CODE >8:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\aldiv.c
+22F2 text48 CODE >14:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\aldiv.c
+22F6 text48 CODE >15:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\aldiv.c
+22FA text48 CODE >16:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\aldiv.c
+230A text48 CODE >17:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\aldiv.c
+230E text48 CODE >18:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\aldiv.c
+230E text48 CODE >19:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\aldiv.c
+2312 text48 CODE >20:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\aldiv.c
+2322 text48 CODE >21:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\aldiv.c
+2326 text48 CODE >22:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\aldiv.c
+2326 text48 CODE >23:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\aldiv.c
+2336 text48 CODE >24:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\aldiv.c
+2342 text48 CODE >25:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\aldiv.c
+2346 text48 CODE >26:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\aldiv.c
+2348 text48 CODE >27:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\aldiv.c
+2352 text48 CODE >28:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\aldiv.c
+2354 text48 CODE >26:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\aldiv.c
+2354 text48 CODE >29:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\aldiv.c
+2358 text48 CODE >31:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\aldiv.c
+2362 text48 CODE >32:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\aldiv.c
+2376 text48 CODE >33:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\aldiv.c
+2386 text48 CODE >34:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\aldiv.c
+2388 text48 CODE >35:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\aldiv.c
+2388 text48 CODE >36:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\aldiv.c
+2392 text48 CODE >37:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\aldiv.c
+2396 text48 CODE >39:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\aldiv.c
+239C text48 CODE >40:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\aldiv.c
+23AC text48 CODE >41:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\aldiv.c
+27C2 text47 CODE >15:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\Umul32.c
+27C2 text47 CODE >119:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\Umul32.c
+27D2 text47 CODE >120:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\Umul32.c
+27D2 text47 CODE >121:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\Umul32.c
+27D6 text47 CODE >122:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\Umul32.c
+27E6 text47 CODE >123:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\Umul32.c
+27F0 text47 CODE >124:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\Umul32.c
+27FA text47 CODE >125:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\Umul32.c
+2806 text47 CODE >128:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\Umul32.c
+2816 text47 CODE >129:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\Umul32.c
+2226 text46 CODE >52:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\hal/adc.c
+2226 text46 CODE >54:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\hal/adc.c
+2238 text46 CODE >57:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\hal/adc.c
+228E text46 CODE >58:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\hal/adc.c
+22E0 text46 CODE >59:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\hal/adc.c
+22E8 text46 CODE >60:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\hal/adc.c
+259A text45 CODE >8:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lldiv.c
+259A text45 CODE >14:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lldiv.c
+25AA text45 CODE >15:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lldiv.c
+25B6 text45 CODE >16:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lldiv.c
+25BA text45 CODE >17:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lldiv.c
+25BC text45 CODE >18:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lldiv.c
+25C6 text45 CODE >19:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lldiv.c
+25C8 text45 CODE >17:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lldiv.c
+25C8 text45 CODE >20:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lldiv.c
+25CC text45 CODE >22:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lldiv.c
+25D6 text45 CODE >23:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lldiv.c
+25EA text45 CODE >24:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lldiv.c
+25FA text45 CODE >25:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lldiv.c
+25FC text45 CODE >26:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lldiv.c
+25FC text45 CODE >27:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lldiv.c
+2606 text45 CODE >28:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lldiv.c
+260A text45 CODE >30:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lldiv.c
+261A text45 CODE >31:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lldiv.c
+1674 text44 CODE >66:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\hal/adc.c
+1674 text44 CODE >68:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\hal/adc.c
+1686 text44 CODE >69:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\hal/adc.c
+1690 text44 CODE >70:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\hal/adc.c
+1694 text44 CODE >72:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\hal/adc.c
+169C text44 CODE >73:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\hal/adc.c
+171E text44 CODE >75:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\hal/adc.c
+178A text44 CODE >76:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\hal/adc.c
+17F8 text44 CODE >77:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\hal/adc.c
+1844 text44 CODE >79:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\hal/adc.c
+1854 text44 CODE >81:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\hal/adc.c
+186C text44 CODE >83:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\hal/adc.c
+1870 text44 CODE >84:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\hal/adc.c
+1870 text44 CODE >86:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\hal/adc.c
+1876 text44 CODE >88:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\hal/adc.c
+1888 text44 CODE >89:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\hal/adc.c
+1888 text44 CODE >91:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\hal/adc.c
+188C text44 CODE >92:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\hal/adc.c
+13EC text43 CODE >31:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/buttons.c
+13EC text43 CODE >38:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/buttons.c
+13F0 text43 CODE >49:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/buttons.c
+13FA text43 CODE >51:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/buttons.c
+1402 text43 CODE >55:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/buttons.c
+1408 text43 CODE >57:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/buttons.c
+140C text43 CODE >58:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/buttons.c
+1412 text43 CODE >59:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/buttons.c
+1420 text43 CODE >61:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/buttons.c
+1426 text43 CODE >62:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/buttons.c
+142A text43 CODE >63:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/buttons.c
+1434 text43 CODE >64:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/buttons.c
+1434 text43 CODE >69:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/buttons.c
+143A text43 CODE >71:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/buttons.c
+143E text43 CODE >72:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/buttons.c
+1444 text43 CODE >73:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/buttons.c
+1452 text43 CODE >75:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/buttons.c
+1458 text43 CODE >76:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/buttons.c
+145C text43 CODE >77:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/buttons.c
+1466 text43 CODE >78:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/buttons.c
+1466 text43 CODE >83:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/buttons.c
+146C text43 CODE >85:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/buttons.c
+1470 text43 CODE >86:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/buttons.c
+1476 text43 CODE >87:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/buttons.c
+1488 text43 CODE >89:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/buttons.c
+148E text43 CODE >90:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/buttons.c
+1492 text43 CODE >91:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/buttons.c
+149C text43 CODE >92:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/buttons.c
+149C text43 CODE >97:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/buttons.c
+14A2 text43 CODE >99:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/buttons.c
+14A6 text43 CODE >100:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/buttons.c
+14AC text43 CODE >101:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/buttons.c
+14BA text43 CODE >103:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/buttons.c
+14C0 text43 CODE >104:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/buttons.c
+14C4 text43 CODE >105:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/buttons.c
+14CE text43 CODE >106:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/buttons.c
+14CE text43 CODE >111:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/buttons.c
+14D4 text43 CODE >113:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/buttons.c
+14D8 text43 CODE >114:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/buttons.c
+14DE text43 CODE >115:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/buttons.c
+14EC text43 CODE >117:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/buttons.c
+14F2 text43 CODE >118:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/buttons.c
+14F6 text43 CODE >119:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/buttons.c
+1500 text43 CODE >122:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/buttons.c
+1502 text43 CODE >123:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/buttons.c
+1502 text43 CODE >127:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/buttons.c
+150C text43 CODE >129:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/buttons.c
+1512 text43 CODE >130:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/buttons.c
+1520 text43 CODE >132:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/buttons.c
+1526 text43 CODE >133:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/buttons.c
+1530 text43 CODE >134:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/buttons.c
+153A text43 CODE >135:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/buttons.c
+153E text43 CODE >137:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/buttons.c
+1540 text43 CODE >138:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/buttons.c
+1540 text43 CODE >140:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/buttons.c
+1546 text43 CODE >141:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/buttons.c
+1546 text43 CODE >145:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/buttons.c
+1550 text43 CODE >147:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/buttons.c
+1556 text43 CODE >148:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/buttons.c
+1564 text43 CODE >150:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/buttons.c
+156A text43 CODE >151:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/buttons.c
+1574 text43 CODE >152:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/buttons.c
+157E text43 CODE >153:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/buttons.c
+1582 text43 CODE >155:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/buttons.c
+1584 text43 CODE >156:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/buttons.c
+1584 text43 CODE >158:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/buttons.c
+158A text43 CODE >159:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/buttons.c
+158A text43 CODE >163:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/buttons.c
+1592 text43 CODE >165:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/buttons.c
+1598 text43 CODE >166:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/buttons.c
+15A6 text43 CODE >168:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/buttons.c
+15AC text43 CODE >169:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/buttons.c
+15B6 text43 CODE >170:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/buttons.c
+15C0 text43 CODE >171:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/buttons.c
+15C4 text43 CODE >173:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/buttons.c
+15C6 text43 CODE >174:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/buttons.c
+15C6 text43 CODE >176:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/buttons.c
+15CC text43 CODE >177:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/buttons.c
+15D6 text43 CODE >178:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/buttons.c
+15D6 text43 CODE >182:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/buttons.c
+15E0 text43 CODE >184:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/buttons.c
+15E6 text43 CODE >185:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/buttons.c
+15F4 text43 CODE >187:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/buttons.c
+15FA text43 CODE >188:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/buttons.c
+1604 text43 CODE >189:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/buttons.c
+160E text43 CODE >190:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/buttons.c
+1612 text43 CODE >192:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/buttons.c
+1614 text43 CODE >193:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/buttons.c
+1614 text43 CODE >195:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/buttons.c
+161A text43 CODE >196:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/buttons.c
+1624 text43 CODE >197:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/buttons.c
+1624 text43 CODE >201:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/buttons.c
+162E text43 CODE >203:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/buttons.c
+1634 text43 CODE >204:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/buttons.c
+1642 text43 CODE >206:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/buttons.c
+1648 text43 CODE >207:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/buttons.c
+1652 text43 CODE >208:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/buttons.c
+165C text43 CODE >209:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/buttons.c
+1660 text43 CODE >211:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/buttons.c
+1662 text43 CODE >212:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/buttons.c
+1662 text43 CODE >214:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/buttons.c
+1668 text43 CODE >215:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/buttons.c
+1672 text43 CODE >216:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/buttons.c
+299E text42 CODE >20:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\hal/dio.c
+299E text42 CODE >22:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\hal/dio.c
+29A2 text42 CODE >23:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\hal/dio.c
+29A6 text42 CODE >24:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\hal/dio.c
+29AA text42 CODE >26:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\hal/dio.c
+29AE text42 CODE >27:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\hal/dio.c
+29B2 text42 CODE >28:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\hal/dio.c
+29B6 text42 CODE >30:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\hal/dio.c
+29BA text42 CODE >31:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\hal/dio.c
+29BE text42 CODE >33:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\hal/dio.c
+29C2 text42 CODE >35:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\hal/dio.c
+29C6 text42 CODE >36:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\hal/dio.c
+29CA text42 CODE >37:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\hal/dio.c
+29CE text42 CODE >42:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\hal/dio.c
+29D2 text42 CODE >43:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\hal/dio.c
+29D6 text42 CODE >45:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\hal/dio.c
+29DA text42 CODE >48:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\hal/dio.c
+29DC text42 CODE >50:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\hal/dio.c
+2B86 text41 CODE >18:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\hal/i2c.c
+2B86 text41 CODE >20:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\hal/i2c.c
+2B8A text41 CODE >21:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\hal/i2c.c
+2B8E text41 CODE >22:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\hal/i2c.c
+2B92 text41 CODE >23:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\hal/i2c.c
+2B96 text41 CODE >24:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\hal/i2c.c
+2B9A text41 CODE >25:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\hal/i2c.c
+2B9C text41 CODE >26:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\hal/i2c.c
+2B9E text41 CODE >27:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\hal/i2c.c
+2BA0 text41 CODE >28:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\hal/i2c.c
+2BA2 text41 CODE >31:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\hal/i2c.c
+2B06 text40 CODE >58:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\hal/i2c.c
+2B0A text40 CODE >60:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\hal/i2c.c
+2B1C text40 CODE >62:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\hal/i2c.c
+2B20 text40 CODE >63:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\hal/i2c.c
+2B22 text40 CODE >64:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\hal/i2c.c
+2B24 text40 CODE >65:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\hal/i2c.c
+2B24 text40 CODE >67:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\hal/i2c.c
+2C16 text39 CODE >37:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\hal/timer.c
+2C16 text39 CODE >39:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\hal/timer.c
+2C26 text39 CODE >40:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\hal/timer.c
+2516 text38 CODE >34:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\hal/i2c.c
+251A text38 CODE >36:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\hal/i2c.c
+2526 text38 CODE >37:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\hal/i2c.c
+2538 text38 CODE >39:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\hal/i2c.c
+253A text38 CODE >40:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\hal/i2c.c
+253C text38 CODE >42:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\hal/i2c.c
+256A text38 CODE >43:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\hal/i2c.c
+2578 text38 CODE >45:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\hal/i2c.c
+257C text38 CODE >40:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\hal/i2c.c
+257C text38 CODE >46:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\hal/i2c.c
+258E text38 CODE >48:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\hal/i2c.c
+2592 text38 CODE >49:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\hal/i2c.c
+2594 text38 CODE >50:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\hal/i2c.c
+2596 text38 CODE >51:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\hal/i2c.c
+2596 text38 CODE >53:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\hal/i2c.c
+2C7E text37 CODE >73:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\hal/i2c.c
+2C7E text37 CODE >75:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\hal/i2c.c
+2C80 text37 CODE >76:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\hal/i2c.c
+28BE text36 CODE >431:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/lcd.c
+28C2 text36 CODE >433:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/lcd.c
+28CA text36 CODE >436:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/lcd.c
+28E0 text36 CODE >437:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/lcd.c
+28E6 text36 CODE >442:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/lcd.c
+2908 text36 CODE >452:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/lcd.c
+290A text36 CODE >453:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/lcd.c
+290C text36 CODE >454:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/lcd.c
+290C text36 CODE >456:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/lcd.c
+1A86 text35 CODE >28:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/lcd.c
+1A86 text35 CODE >32:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/lcd.c
+1A98 text35 CODE >33:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/lcd.c
+1A9E text35 CODE >35:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/lcd.c
+1AB0 text35 CODE >36:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/lcd.c
+1AC6 text35 CODE >38:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/lcd.c
+1AD8 text35 CODE >39:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/lcd.c
+1AEE text35 CODE >41:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/lcd.c
+1B00 text35 CODE >42:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/lcd.c
+1B16 text35 CODE >44:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/lcd.c
+1B28 text35 CODE >45:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/lcd.c
+1B30 text35 CODE >47:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/lcd.c
+1B40 text35 CODE >48:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/lcd.c
+1B40 text35 CODE >49:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/lcd.c
+1B4A text35 CODE >50:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/lcd.c
+1B5C text35 CODE >51:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/lcd.c
+1B62 text35 CODE >47:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/lcd.c
+1B68 text35 CODE >54:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/lcd.c
+1B6E text35 CODE >56:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/lcd.c
+1B80 text35 CODE >57:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/lcd.c
+1B86 text35 CODE >59:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/lcd.c
+1B98 text35 CODE >60:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/lcd.c
+1BAE text35 CODE >62:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/lcd.c
+1BC0 text35 CODE >63:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/lcd.c
+1BC8 text35 CODE >65:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/lcd.c
+1BD8 text35 CODE >66:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/lcd.c
+1BD8 text35 CODE >67:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/lcd.c
+1BE2 text35 CODE >68:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/lcd.c
+1BF4 text35 CODE >69:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/lcd.c
+1BFA text35 CODE >65:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/lcd.c
+1C00 text35 CODE >72:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/lcd.c
+1C12 text35 CODE >73:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/lcd.c
+1C16 text35 CODE >74:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/lcd.c
+2150 text34 CODE >496:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/lcd.c
+2150 text34 CODE >502:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/lcd.c
+2152 text34 CODE >504:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/lcd.c
+215C text34 CODE >505:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/lcd.c
+2166 text34 CODE >507:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/lcd.c
+2170 text34 CODE >508:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/lcd.c
+2172 text34 CODE >509:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/lcd.c
+2172 text34 CODE >511:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/lcd.c
+217C text34 CODE >513:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/lcd.c
+217E text34 CODE >515:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/lcd.c
+217E text34 CODE >516:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/lcd.c
+2186 text34 CODE >518:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/lcd.c
+21A0 text34 CODE >520:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/lcd.c
+21A0 text34 CODE >522:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/lcd.c
+21BC text34 CODE >524:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/lcd.c
+21C6 text34 CODE >526:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/lcd.c
+21CA text34 CODE >527:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/lcd.c
+21D2 text34 CODE >529:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/lcd.c
+21D8 text34 CODE >530:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/lcd.c
+21E2 text34 CODE >533:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/lcd.c
+21E4 text34 CODE >535:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/lcd.c
+21EE text34 CODE >537:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/lcd.c
+21F2 text34 CODE >538:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/lcd.c
+21FC text34 CODE >541:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/lcd.c
+21FE text34 CODE >502:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/lcd.c
+2910 text33 CODE >20:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\hal/nvm.c
+2910 text33 CODE >22:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\hal/nvm.c
+291A text33 CODE >24:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\hal/nvm.c
+2928 text33 CODE >26:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\hal/nvm.c
+2944 text33 CODE >24:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\hal/nvm.c
+294C text33 CODE >28:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\hal/nvm.c
+2956 text33 CODE >30:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\hal/nvm.c
+295A text33 CODE >31:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\hal/nvm.c
+2C78 text32 CODE >33:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\hal/system.c
+2C78 text32 CODE >35:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\hal/system.c
+2C7A text32 CODE >36:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\hal/system.c
+2C7C text32 CODE >37:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\hal/system.c
+2C72 text31 CODE >27:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\hal/system.c
+2C72 text31 CODE >29:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\hal/system.c
+2C74 text31 CODE >30:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\hal/system.c
+2C76 text31 CODE >31:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\hal/system.c
+1C18 text30 CODE >38:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\hal/nvm.c
+1C18 text30 CODE >45:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\hal/nvm.c
+1C20 text30 CODE >48:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\hal/nvm.c
+1C26 text30 CODE >51:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\hal/nvm.c
+1C26 text30 CODE >53:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\hal/nvm.c
+1C2A text30 CODE >55:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\hal/nvm.c
+1C2E text30 CODE >56:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\hal/nvm.c
+1C30 text30 CODE >58:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\hal/nvm.c
+1C38 text30 CODE >60:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\hal/nvm.c
+1C3E text30 CODE >62:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\hal/nvm.c
+1C48 text30 CODE >63:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\hal/nvm.c
+1C50 text30 CODE >64:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\hal/nvm.c
+1C54 text30 CODE >66:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\hal/nvm.c
+1C5A text30 CODE >68:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\hal/nvm.c
+1C64 text30 CODE >69:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\hal/nvm.c
+1C6C text30 CODE >70:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\hal/nvm.c
+1C70 text30 CODE >72:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\hal/nvm.c
+1C76 text30 CODE >74:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\hal/nvm.c
+1C80 text30 CODE >75:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\hal/nvm.c
+1C88 text30 CODE >76:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\hal/nvm.c
+1C8C text30 CODE >78:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\hal/nvm.c
+1C92 text30 CODE >80:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\hal/nvm.c
+1C9C text30 CODE >81:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\hal/nvm.c
+1CA4 text30 CODE >82:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\hal/nvm.c
+1CA8 text30 CODE >84:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\hal/nvm.c
+1CAE text30 CODE >86:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\hal/nvm.c
+1CB8 text30 CODE >87:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\hal/nvm.c
+1CC0 text30 CODE >88:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\hal/nvm.c
+1CC4 text30 CODE >90:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\hal/nvm.c
+1CCA text30 CODE >92:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\hal/nvm.c
+1CD4 text30 CODE >93:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\hal/nvm.c
+1CDC text30 CODE >94:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\hal/nvm.c
+1CE0 text30 CODE >96:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\hal/nvm.c
+1CE6 text30 CODE >98:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\hal/nvm.c
+1CF0 text30 CODE >99:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\hal/nvm.c
+1CF8 text30 CODE >100:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\hal/nvm.c
+1CFC text30 CODE >102:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\hal/nvm.c
+1D02 text30 CODE >104:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\hal/nvm.c
+1D0C text30 CODE >105:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\hal/nvm.c
+1D14 text30 CODE >106:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\hal/nvm.c
+1D1A text30 CODE >109:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\hal/nvm.c
+1D1A text30 CODE >113:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\hal/nvm.c
+1D20 text30 CODE >114:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\hal/nvm.c
+1D24 text30 CODE >115:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\hal/nvm.c
+1D2A text30 CODE >116:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\hal/nvm.c
+1D2C text30 CODE >117:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\hal/nvm.c
+1D2C text30 CODE >119:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\hal/nvm.c
+1D32 text30 CODE >120:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\hal/nvm.c
+1D52 text30 CODE >121:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\hal/nvm.c
+1D58 text30 CODE >122:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\hal/nvm.c
+1D5C text30 CODE >123:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\hal/nvm.c
+1D66 text30 CODE >124:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\hal/nvm.c
+1D66 text30 CODE >126:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\hal/nvm.c
+1D68 text30 CODE >127:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\hal/nvm.c
+1D6A text30 CODE >128:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\hal/nvm.c
+1D6E text30 CODE >129:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\hal/nvm.c
+1D72 text30 CODE >130:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\hal/nvm.c
+1D74 text30 CODE >132:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\hal/nvm.c
+1D78 text30 CODE >133:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\hal/nvm.c
+2C54 text29 CODE >79:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\hal/pwm.c
+2C54 text29 CODE >81:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\hal/pwm.c
+2C5A text29 CODE >82:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\hal/pwm.c
+2696 text28 CODE >29:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\hal/pwm.c
+2696 text28 CODE >34:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\hal/pwm.c
+269E text28 CODE >36:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\hal/pwm.c
+26A2 text28 CODE >37:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\hal/pwm.c
+26D8 text28 CODE >39:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\hal/pwm.c
+26DA text28 CODE >41:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\hal/pwm.c
+26E2 text28 CODE >43:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\hal/pwm.c
+26E4 text28 CODE >44:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\hal/pwm.c
+26E8 text28 CODE >45:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\hal/pwm.c
+26EE text28 CODE >46:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\hal/pwm.c
+26F6 text28 CODE >48:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\hal/pwm.c
+26FA text28 CODE >49:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\hal/pwm.c
+2700 text28 CODE >51:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\hal/pwm.c
+2C04 text27 CODE >16:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\hal/system.c
+2C04 text27 CODE >18:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\hal/system.c
+2C08 text27 CODE >19:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\hal/system.c
+2C0C text27 CODE >21:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\hal/system.c
+2C0E text27 CODE >22:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\hal/system.c
+2C10 text27 CODE >23:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\hal/system.c
+2C6C text26 CODE >52:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\hal/timer.c
+2C6C text26 CODE >54:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\hal/timer.c
+2BF0 text25 CODE >18:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\hal/timer.c
+2BF0 text25 CODE >20:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\hal/timer.c
+2BF4 text25 CODE >21:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\hal/timer.c
+2BF8 text25 CODE >22:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\hal/timer.c
+2BFC text25 CODE >23:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\hal/timer.c
+2C00 text25 CODE >32:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\hal/timer.c
+2C02 text25 CODE >33:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\hal/timer.c
+2C4C text24 CODE >62:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\hal/timer.c
+2C4C text24 CODE >64:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\hal/timer.c
+2C52 text24 CODE >65:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\hal/timer.c
+2B48 text23 CODE >477:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/lcd.c
+2B48 text23 CODE >479:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/lcd.c
+2B4E text23 CODE >480:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/lcd.c
+2B58 text23 CODE >481:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/lcd.c
+2B58 text23 CODE >482:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/lcd.c
+2B62 text23 CODE >480:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/lcd.c
+2A88 text22 CODE >461:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/lcd.c
+2A8C text22 CODE >463:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/lcd.c
+2A94 text22 CODE >465:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/lcd.c
+2AB4 text22 CODE >466:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/lcd.c
+2AB6 text22 CODE >467:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/lcd.c
+2AB6 text22 CODE >469:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/lcd.c
+2A1C text21 CODE >410:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/lcd.c
+2A20 text21 CODE >412:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/lcd.c
+2A26 text21 CODE >413:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/lcd.c
+2A28 text21 CODE >415:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/lcd.c
+2A32 text21 CODE >416:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/lcd.c
+2A3A text21 CODE >417:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/lcd.c
+2A48 text21 CODE >421:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/lcd.c
+2A4A text21 CODE >413:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/lcd.c
+1EC6 text20 CODE >276:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/lcd.c
+1ECA text20 CODE >278:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/lcd.c
+1ECC text20 CODE >280:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/lcd.c
+1ED0 text20 CODE >281:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/lcd.c
+1ED8 text20 CODE >283:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/lcd.c
+1EDC text20 CODE >285:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/lcd.c
+1EDC text20 CODE >287:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/lcd.c
+1EE0 text20 CODE >288:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/lcd.c
+1EE0 text20 CODE >290:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/lcd.c
+1EEA text20 CODE >292:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/lcd.c
+1EEE text20 CODE >294:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/lcd.c
+1EEE text20 CODE >296:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/lcd.c
+1EF2 text20 CODE >297:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/lcd.c
+1EF2 text20 CODE >299:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/lcd.c
+1EFA text20 CODE >301:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/lcd.c
+1EFE text20 CODE >303:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/lcd.c
+1EFE text20 CODE >305:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/lcd.c
+1F02 text20 CODE >306:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/lcd.c
+1F02 text20 CODE >308:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/lcd.c
+1F0A text20 CODE >310:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/lcd.c
+1F0E text20 CODE >312:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/lcd.c
+1F18 text20 CODE >314:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/lcd.c
+1F1C text20 CODE >316:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/lcd.c
+1F1C text20 CODE >318:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/lcd.c
+1F20 text20 CODE >319:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/lcd.c
+1F20 text20 CODE >322:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/lcd.c
+1F2A text20 CODE >324:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/lcd.c
+1F2E text20 CODE >326:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/lcd.c
+1F2E text20 CODE >328:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/lcd.c
+1F32 text20 CODE >329:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/lcd.c
+1F32 text20 CODE >331:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/lcd.c
+1F3A text20 CODE >333:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/lcd.c
+1F3E text20 CODE >335:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/lcd.c
+1F48 text20 CODE >337:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/lcd.c
+1F4C text20 CODE >339:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/lcd.c
+1F4C text20 CODE >341:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/lcd.c
+1F50 text20 CODE >342:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/lcd.c
+1F50 text20 CODE >344:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/lcd.c
+1F58 text20 CODE >346:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/lcd.c
+1F5C text20 CODE >348:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/lcd.c
+1F66 text20 CODE >350:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/lcd.c
+1F6A text20 CODE >352:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/lcd.c
+1F6A text20 CODE >354:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/lcd.c
+1F6E text20 CODE >355:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/lcd.c
+1F6E text20 CODE >357:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/lcd.c
+1F72 text20 CODE >359:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/lcd.c
+1F7A text20 CODE >361:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/lcd.c
+1F7E text20 CODE >363:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/lcd.c
+1F88 text20 CODE >365:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/lcd.c
+1F8C text20 CODE >367:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/lcd.c
+1F8C text20 CODE >369:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/lcd.c
+1F90 text20 CODE >370:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/lcd.c
+1F90 text20 CODE >372:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/lcd.c
+1F94 text20 CODE >373:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/lcd.c
+1F98 text20 CODE >374:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/lcd.c
+1F9C text20 CODE >375:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/lcd.c
+1FA0 text20 CODE >376:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/lcd.c
+1FA4 text20 CODE >377:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/lcd.c
+1FA8 text20 CODE >380:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/lcd.c
+1FAA text20 CODE >381:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/lcd.c
+1FAC text20 CODE >278:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/lcd.c
+286C text19 CODE >8:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lwdiv.c
+286C text19 CODE >14:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lwdiv.c
+2874 text19 CODE >15:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lwdiv.c
+287C text19 CODE >16:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lwdiv.c
+2880 text19 CODE >17:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lwdiv.c
+2882 text19 CODE >18:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lwdiv.c
+2888 text19 CODE >19:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lwdiv.c
+288A text19 CODE >17:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lwdiv.c
+288A text19 CODE >20:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lwdiv.c
+288E text19 CODE >22:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lwdiv.c
+2894 text19 CODE >23:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lwdiv.c
+28A0 text19 CODE >24:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lwdiv.c
+28A8 text19 CODE >25:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lwdiv.c
+28AA text19 CODE >26:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lwdiv.c
+28AA text19 CODE >27:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lwdiv.c
+28B0 text19 CODE >28:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lwdiv.c
+28B4 text19 CODE >30:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lwdiv.c
+28BC text19 CODE >31:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lwdiv.c
+295C text18 CODE >8:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lwmod.c
+295C text18 CODE >13:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lwmod.c
+2964 text18 CODE >14:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lwmod.c
+2968 text18 CODE >15:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lwmod.c
+296A text18 CODE >16:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lwmod.c
+2970 text18 CODE >17:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lwmod.c
+2972 text18 CODE >15:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lwmod.c
+2972 text18 CODE >18:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lwmod.c
+2976 text18 CODE >20:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lwmod.c
+2982 text18 CODE >21:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lwmod.c
+298A text18 CODE >22:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lwmod.c
+2990 text18 CODE >23:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lwmod.c
+2994 text18 CODE >25:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lwmod.c
+299C text18 CODE >26:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lwmod.c
+246E text17 CODE >390:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/lcd.c
+246E text17 CODE >392:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/lcd.c
+247C text17 CODE >394:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/lcd.c
+2486 text17 CODE >395:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/lcd.c
+2486 text17 CODE >397:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/lcd.c
+24AA text17 CODE >398:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/lcd.c
+24B0 text17 CODE >400:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/lcd.c
+24EA text17 CODE >401:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/lcd.c
+24F0 text17 CODE >403:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/lcd.c
+2514 text17 CODE >404:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/lcd.c
+1890 text16 CODE >172:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/lcd.c
+1890 text16 CODE >176:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/lcd.c
+1898 text16 CODE >178:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/lcd.c
+18AE text16 CODE >181:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/lcd.c
+18BC text16 CODE >185:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/lcd.c
+18C6 text16 CODE >188:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/lcd.c
+18D8 text16 CODE >190:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/lcd.c
+18E8 text16 CODE >192:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/lcd.c
+18E8 text16 CODE >194:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/lcd.c
+18F8 text16 CODE >197:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/lcd.c
+18F8 text16 CODE >199:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/lcd.c
+1908 text16 CODE >203:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/lcd.c
+1908 text16 CODE >205:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/lcd.c
+190E text16 CODE >209:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/lcd.c
+191C text16 CODE >211:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/lcd.c
+1926 text16 CODE >213:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/lcd.c
+1938 text16 CODE >215:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/lcd.c
+1948 text16 CODE >217:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/lcd.c
+1948 text16 CODE >219:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/lcd.c
+1958 text16 CODE >222:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/lcd.c
+1958 text16 CODE >224:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/lcd.c
+1968 text16 CODE >227:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/lcd.c
+1968 text16 CODE >229:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/lcd.c
+196E text16 CODE >232:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/lcd.c
+1980 text16 CODE >234:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/lcd.c
+198C text16 CODE >235:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/lcd.c
+199C text16 CODE >236:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/lcd.c
+19AE text16 CODE >237:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/lcd.c
+19B0 text16 CODE >242:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/lcd.c
+19BA text16 CODE >243:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/lcd.c
+19C8 text16 CODE >244:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/lcd.c
+19D8 text16 CODE >245:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/lcd.c
+19DA text16 CODE >247:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/lcd.c
+19E4 text16 CODE >248:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/lcd.c
+19F2 text16 CODE >249:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/lcd.c
+1A02 text16 CODE >250:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/lcd.c
+1A04 text16 CODE >252:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/lcd.c
+1A0E text16 CODE >253:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/lcd.c
+1A1C text16 CODE >254:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/lcd.c
+1A2C text16 CODE >255:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/lcd.c
+1A2E text16 CODE >257:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/lcd.c
+1A38 text16 CODE >258:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/lcd.c
+1A46 text16 CODE >259:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/lcd.c
+1A56 text16 CODE >263:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/lcd.c
+1A58 text16 CODE >240:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/lcd.c
+1A82 text16 CODE >263:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/lcd.c
+1A84 text16 CODE >240:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/lcd.c
+2BDA text15 CODE >487:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/lcd.c
+2BDA text15 CODE >489:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/lcd.c
+2BE4 text15 CODE >491:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/lcd.c
+2818 text14 CODE >148:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\hal/nvm.c
+2818 text14 CODE >150:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\hal/nvm.c
+2822 text14 CODE >151:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\hal/nvm.c
+282E text14 CODE >153:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\hal/nvm.c
+2832 text14 CODE >154:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\hal/nvm.c
+2834 text14 CODE >155:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\hal/nvm.c
+2836 text14 CODE >156:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\hal/nvm.c
+2838 text14 CODE >157:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\hal/nvm.c
+2840 text14 CODE >158:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\hal/nvm.c
+2848 text14 CODE >160:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\hal/nvm.c
+284E text14 CODE >161:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\hal/nvm.c
+2850 text14 CODE >162:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\hal/nvm.c
+2856 text14 CODE >164:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\hal/nvm.c
+2860 text14 CODE >165:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\hal/nvm.c
+2860 text14 CODE >166:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\hal/nvm.c
+1D7A text13 CODE >20:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\apl/user.c
+1D7A text13 CODE >22:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\apl/user.c
+1D84 text13 CODE >23:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\apl/user.c
+1D8E text13 CODE >26:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\apl/user.c
+1DA4 text13 CODE >27:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\apl/user.c
+1DB2 text13 CODE >29:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\apl/user.c
+1DBA text13 CODE >30:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\apl/user.c
+1DBC text13 CODE >31:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\apl/user.c
+1DBC text13 CODE >33:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\apl/user.c
+1DC6 text13 CODE >34:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\apl/user.c
+1DC6 text13 CODE >36:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\apl/user.c
+1DDC text13 CODE >37:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\apl/user.c
+1DEA text13 CODE >39:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\apl/user.c
+1DF2 text13 CODE >40:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\apl/user.c
+1DF4 text13 CODE >41:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\apl/user.c
+1DF4 text13 CODE >43:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\apl/user.c
+1DFE text13 CODE >44:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\apl/user.c
+1DFE text13 CODE >46:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\apl/user.c
+1E14 text13 CODE >47:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\apl/user.c
+1E22 text13 CODE >49:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\apl/user.c
+1E2A text13 CODE >50:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\apl/user.c
+1E2C text13 CODE >51:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\apl/user.c
+1E2C text13 CODE >53:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\apl/user.c
+1E36 text13 CODE >54:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\apl/user.c
+1E36 text13 CODE >56:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\apl/user.c
+1E4C text13 CODE >57:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\apl/user.c
+1E5A text13 CODE >59:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\apl/user.c
+1E62 text13 CODE >60:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\apl/user.c
+1E64 text13 CODE >61:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\apl/user.c
+1E64 text13 CODE >63:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\apl/user.c
+1E6E text13 CODE >64:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\apl/user.c
+1E6E text13 CODE >78:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\apl/user.c
+1E72 text13 CODE >79:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\apl/user.c
+1E8A text13 CODE >80:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\apl/user.c
+1EA2 text13 CODE >81:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\apl/user.c
+1EBA text13 CODE >82:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\apl/user.c
+1EC0 text13 CODE >83:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\apl/user.c
+1EC4 text13 CODE >84:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\apl/user.c
+2C42 text12 CODE >47:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\hal/adc.c
+2C42 text12 CODE >49:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\hal/adc.c
+2C4A text12 CODE >50:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\hal/adc.c
+276C text11 CODE >19:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/buttons.c
+276C text11 CODE >21:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/buttons.c
+2778 text11 CODE >22:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/buttons.c
+278A text11 CODE >23:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/buttons.c
+279C text11 CODE >24:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/buttons.c
+27AE text11 CODE >25:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/buttons.c
+27C0 text11 CODE >26:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/buttons.c
+2012 text10 CODE >109:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/lcd.c
+2012 text10 CODE >112:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/lcd.c
+2028 text10 CODE >114:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/lcd.c
+2030 text10 CODE >117:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/lcd.c
+203E text10 CODE >119:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/lcd.c
+204E text10 CODE >121:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/lcd.c
+204E text10 CODE >123:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/lcd.c
+2054 text10 CODE >127:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/lcd.c
+2062 text10 CODE >129:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/lcd.c
+2072 text10 CODE >131:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/lcd.c
+2072 text10 CODE >133:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/lcd.c
+2078 text10 CODE >136:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/lcd.c
+208A text10 CODE >138:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/lcd.c
+2098 text10 CODE >139:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/lcd.c
+20A6 text10 CODE >140:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/lcd.c
+20B4 text10 CODE >142:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/lcd.c
+20B6 text10 CODE >147:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/lcd.c
+20B6 text10 CODE >148:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/lcd.c
+20C2 text10 CODE >149:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/lcd.c
+20CE text10 CODE >150:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/lcd.c
+20DA text10 CODE >151:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/lcd.c
+20DC text10 CODE >153:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/lcd.c
+20DC text10 CODE >154:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/lcd.c
+20E8 text10 CODE >155:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/lcd.c
+20F4 text10 CODE >156:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/lcd.c
+2100 text10 CODE >157:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/lcd.c
+2102 text10 CODE >159:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/lcd.c
+2102 text10 CODE >160:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/lcd.c
+210E text10 CODE >161:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/lcd.c
+211A text10 CODE >162:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/lcd.c
+2126 text10 CODE >166:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/lcd.c
+2128 text10 CODE >145:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/lcd.c
+214C text10 CODE >166:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/lcd.c
+214E text10 CODE >145:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\mid/lcd.c
+29DE text9 CODE >140:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\hal/nvm.c
+29E2 text9 CODE >142:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\hal/nvm.c
+29FC text9 CODE >143:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\hal/nvm.c
+2A1A text9 CODE >144:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\hal/nvm.c
+2B68 text8 CODE >57:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\hal/pwm.c
+2B68 text8 CODE >59:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\hal/pwm.c
+2B76 text8 CODE >61:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\hal/pwm.c
+2B80 text8 CODE >62:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\hal/pwm.c
+2B80 text8 CODE >64:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\hal/pwm.c
+2B84 text8 CODE >66:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\hal/pwm.c
+2BC2 text7 CODE >328:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\apl/user.c
+2BC2 text7 CODE >330:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\apl/user.c
+2BD0 text7 CODE >332:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\apl/user.c
+2ABA text6 CODE >354:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\apl/user.c
+2ABA text6 CODE >357:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\apl/user.c
+2ABE text6 CODE >358:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\apl/user.c
+2AC6 text6 CODE >360:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\apl/user.c
+2AD4 text6 CODE >362:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\apl/user.c
+2ADA text6 CODE >363:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\apl/user.c
+2AE2 text6 CODE >364:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\apl/user.c
+2A56 text5 CODE >337:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\apl/user.c
+2A56 text5 CODE >340:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\apl/user.c
+2A5A text5 CODE >341:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\apl/user.c
+2A62 text5 CODE >343:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\apl/user.c
+2A68 text5 CODE >344:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\apl/user.c
+2A6E text5 CODE >346:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\apl/user.c
+2A7C text5 CODE >348:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\apl/user.c
+2A86 text5 CODE >349:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\apl/user.c
+2B28 text4 CODE >318:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\apl/user.c
+2B28 text4 CODE >320:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\apl/user.c
+2B2E text4 CODE >321:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\apl/user.c
+2B3C text4 CODE >323:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\apl/user.c
+2C38 text3 CODE >42:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\hal/adc.c
+2C38 text3 CODE >44:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\hal/adc.c
+2C40 text3 CODE >45:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\hal/adc.c
+261C text2 CODE >370:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\apl/user.c
+261C text2 CODE >373:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\apl/user.c
+2626 text2 CODE >374:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\apl/user.c
+2662 text2 CODE >375:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\apl/user.c
+2670 text2 CODE >376:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\apl/user.c
+2678 text2 CODE >377:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\apl/user.c
+2680 text2 CODE >378:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\apl/user.c
+268C text2 CODE >380:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\apl/user.c
+1014 text1 CODE >86:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\apl/user.c
+1014 text1 CODE >101:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\apl/user.c
+101E text1 CODE >103:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\apl/user.c
+1026 text1 CODE >107:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\apl/user.c
+1032 text1 CODE >109:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\apl/user.c
+1040 text1 CODE >113:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\apl/user.c
+104E text1 CODE >119:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\apl/user.c
+1054 text1 CODE >122:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\apl/user.c
+105C text1 CODE >123:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\apl/user.c
+105C text1 CODE >126:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\apl/user.c
+1064 text1 CODE >128:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\apl/user.c
+107A text1 CODE >130:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\apl/user.c
+1088 text1 CODE >132:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\apl/user.c
+1092 text1 CODE >133:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\apl/user.c
+1092 text1 CODE >135:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\apl/user.c
+10A4 text1 CODE >136:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\apl/user.c
+10AA text1 CODE >137:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\apl/user.c
+10B2 text1 CODE >138:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\apl/user.c
+10BC text1 CODE >139:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\apl/user.c
+10BE text1 CODE >140:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\apl/user.c
+10BE text1 CODE >142:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\apl/user.c
+10CC text1 CODE >144:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\apl/user.c
+10D2 text1 CODE >145:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\apl/user.c
+10D4 text1 CODE >146:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\apl/user.c
+10D4 text1 CODE >148:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\apl/user.c
+10DC text1 CODE >150:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\apl/user.c
+10E8 text1 CODE >151:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\apl/user.c
+10FA text1 CODE >152:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\apl/user.c
+1100 text1 CODE >154:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\apl/user.c
+1108 text1 CODE >155:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\apl/user.c
+110E text1 CODE >156:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\apl/user.c
+1110 text1 CODE >157:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\apl/user.c
+1110 text1 CODE >159:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\apl/user.c
+1114 text1 CODE >163:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\apl/user.c
+1116 text1 CODE >164:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\apl/user.c
+1116 text1 CODE >166:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\apl/user.c
+111C text1 CODE >168:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\apl/user.c
+1124 text1 CODE >169:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\apl/user.c
+112E text1 CODE >170:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\apl/user.c
+1142 text1 CODE >171:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\apl/user.c
+1144 text1 CODE >172:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\apl/user.c
+114A text1 CODE >174:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\apl/user.c
+1154 text1 CODE >175:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\apl/user.c
+1162 text1 CODE >176:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\apl/user.c
+1176 text1 CODE >177:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\apl/user.c
+1176 text1 CODE >181:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\apl/user.c
+1184 text1 CODE >190:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\apl/user.c
+118C text1 CODE >192:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\apl/user.c
+1190 text1 CODE >193:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\apl/user.c
+1192 text1 CODE >194:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\apl/user.c
+119A text1 CODE >196:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\apl/user.c
+119E text1 CODE >197:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\apl/user.c
+119E text1 CODE >200:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\apl/user.c
+11A6 text1 CODE >202:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\apl/user.c
+11AA text1 CODE >203:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\apl/user.c
+11AC text1 CODE >204:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\apl/user.c
+11B4 text1 CODE >206:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\apl/user.c
+11B8 text1 CODE >207:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\apl/user.c
+11B8 text1 CODE >211:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\apl/user.c
+11C0 text1 CODE >213:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\apl/user.c
+11D6 text1 CODE >214:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\apl/user.c
+11DE text1 CODE >215:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\apl/user.c
+11E0 text1 CODE >216:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\apl/user.c
+11EA text1 CODE >218:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\apl/user.c
+11F2 text1 CODE >219:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\apl/user.c
+120A text1 CODE >220:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\apl/user.c
+1218 text1 CODE >221:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\apl/user.c
+1218 text1 CODE >223:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\apl/user.c
+1220 text1 CODE >225:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\apl/user.c
+1236 text1 CODE >226:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\apl/user.c
+123E text1 CODE >227:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\apl/user.c
+1240 text1 CODE >228:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\apl/user.c
+124A text1 CODE >230:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\apl/user.c
+1252 text1 CODE >231:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\apl/user.c
+126A text1 CODE >232:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\apl/user.c
+1278 text1 CODE >233:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\apl/user.c
+1278 text1 CODE >235:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\apl/user.c
+1280 text1 CODE >237:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\apl/user.c
+1296 text1 CODE >238:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\apl/user.c
+129E text1 CODE >239:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\apl/user.c
+12A0 text1 CODE >240:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\apl/user.c
+12AA text1 CODE >242:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\apl/user.c
+12B2 text1 CODE >243:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\apl/user.c
+12CA text1 CODE >244:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\apl/user.c
+12D8 text1 CODE >245:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\apl/user.c
+12D8 text1 CODE >250:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\apl/user.c
+12E6 text1 CODE >252:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\apl/user.c
+12F0 text1 CODE >253:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\apl/user.c
+12FE text1 CODE >254:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\apl/user.c
+1300 text1 CODE >255:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\apl/user.c
+1300 text1 CODE >257:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\apl/user.c
+1316 text1 CODE >259:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\apl/user.c
+131C text1 CODE >260:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\apl/user.c
+131E text1 CODE >261:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\apl/user.c
+131E text1 CODE >263:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\apl/user.c
+1328 text1 CODE >264:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\apl/user.c
+1328 text1 CODE >266:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\apl/user.c
+1330 text1 CODE >275:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\apl/user.c
+1360 text1 CODE >277:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\apl/user.c
+136E text1 CODE >278:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\apl/user.c
+1380 text1 CODE >280:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\apl/user.c
+138A text1 CODE >281:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\apl/user.c
+138A text1 CODE >283:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\apl/user.c
+13A0 text1 CODE >285:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\apl/user.c
+13A6 text1 CODE >286:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\apl/user.c
+13B0 text1 CODE >287:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\apl/user.c
+13BE text1 CODE >288:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\apl/user.c
+13C2 text1 CODE >289:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\apl/user.c
+13D6 text1 CODE >291:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\apl/user.c
+13D8 text1 CODE >292:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\apl/user.c
+13D8 text1 CODE >294:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\apl/user.c
+2702 text0 CODE >25:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\main.c
+2702 text0 CODE >31:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\main.c
+2708 text0 CODE >35:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\main.c
+270C text0 CODE >36:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\main.c
+2710 text0 CODE >37:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\main.c
+2714 text0 CODE >38:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\main.c
+2718 text0 CODE >39:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\main.c
+271C text0 CODE >40:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\main.c
+2720 text0 CODE >41:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\main.c
+2724 text0 CODE >43:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\main.c
+2728 text0 CODE >44:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\main.c
+272C text0 CODE >47:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\main.c
+272C text0 CODE >51:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\main.c
+2736 text0 CODE >53:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\main.c
+273A text0 CODE >54:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\main.c
+273E text0 CODE >55:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\main.c
+2742 text0 CODE >56:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\main.c
+2746 text0 CODE >58:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\main.c
+274A text0 CODE >59:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\main.c
+274A text0 CODE >62:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\main.c
+2752 text0 CODE >64:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\main.c
+2756 text0 CODE >69:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\main.c
+275A text0 CODE >70:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\main.c
+2760 text0 CODE >71:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\main.c
+2760 text0 CODE >72:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\main.c
+2764 text0 CODE >73:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\main.c
+2768 text0 CODE >47:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\main.c
+276A text0 CODE >75:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\main.c
+2AE4 cinit CODE >3971:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\dist/default/debug\WD1SolderStation.X.debug.as
+2AE4 cinit CODE >3973:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\dist/default/debug\WD1SolderStation.X.debug.as
+2AE4 cinit CODE >3976:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\dist/default/debug\WD1SolderStation.X.debug.as
+2AE4 cinit CODE >4095:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\dist/default/debug\WD1SolderStation.X.debug.as
+2AE8 cinit CODE >4096:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\dist/default/debug\WD1SolderStation.X.debug.as
+2AEA cinit CODE >4097:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\dist/default/debug\WD1SolderStation.X.debug.as
+2AEA cinit CODE >4098:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\dist/default/debug\WD1SolderStation.X.debug.as
+2AEC cinit CODE >4099:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\dist/default/debug\WD1SolderStation.X.debug.as
+2AEE cinit CODE >4100:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\dist/default/debug\WD1SolderStation.X.debug.as
+2AF0 cinit CODE >4103:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\dist/default/debug\WD1SolderStation.X.debug.as
+2AF4 cinit CODE >4104:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\dist/default/debug\WD1SolderStation.X.debug.as
+2AF6 cinit CODE >4105:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\dist/default/debug\WD1SolderStation.X.debug.as
+2AF6 cinit CODE >4106:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\dist/default/debug\WD1SolderStation.X.debug.as
+2AF8 cinit CODE >4107:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\dist/default/debug\WD1SolderStation.X.debug.as
+2AFA cinit CODE >4108:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\dist/default/debug\WD1SolderStation.X.debug.as
+2AFC cinit CODE >4114:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\dist/default/debug\WD1SolderStation.X.debug.as
+2AFC cinit CODE >4116:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\dist/default/debug\WD1SolderStation.X.debug.as
+2AFE cinit CODE >4117:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\dist/default/debug\WD1SolderStation.X.debug.as
+2B00 cinit CODE >4118:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\dist/default/debug\WD1SolderStation.X.debug.as
+2B02 cinit CODE >4119:E:\Dokumente\Elektronik\Projekte\SolderStation\Software\WD1SolderStation.X\dist/default/debug\WD1SolderStation.X.debug.as
+# %SYMTAB Section
+# An enumeration of all symbols in the program.
+# The beginning of the section is indicated by %SYMTAB.
+# Each line describes a single symbol as follows:
+#    <label> <value> [-]<load-adj> <class> <space> <psect> <file-name>
+# The value and load-adj are both in unqualified hexadecimal.
+# All other numeric values are in decimal.  The load-adj is the
+# quantity one needs to add to the symbol value in order to obtain the load
+# address of the symbol.  This value may be signed. If the symbol
+# was defined in a psect then <psect> will be "-". File-name
+# is the name of the object file in which the symbol was defined.
+%SYMTAB
+_PWM_SetSyncTrigger 2C64 0 CODE 0 text53 dist/default/debug\WD1SolderStation.X.debug.obj
+_TIMER_ResetSysTickFlag 2C4C 0 CODE 0 text24 dist/default/debug\WD1SolderStation.X.debug.obj
+?_NVM_Read E3 0 BANK0 1 cstackBANK0 dist/default/debug\WD1SolderStation.X.debug.obj
+___lwmod@counter C 0 COMRAM 1 cstackCOMRAM dist/default/debug\WD1SolderStation.X.debug.obj
+ADC_Task@u16_AdcResult 167 0 BANK1 1 cstackBANK1 dist/default/debug\WD1SolderStation.X.debug.obj
+__Lmediumconst 0 0 MEDIUMCONST 0 mediumconst dist/default/debug\WD1SolderStation.X.debug.obj
+__Hspace_0 30000E 0 ABS 0 - dist/default/debug\WD1SolderStation.X.debug.obj
+__Hspace_1 173 0 ABS 0 - dist/default/debug\WD1SolderStation.X.debug.obj
+__Hspace_2 0 0 ABS 0 - dist/default/debug\WD1SolderStation.X.debug.obj
+_u8_NVM_WriteRegister BB 0 BANK0 1 bssBANK0 dist/default/debug\WD1SolderStation.X.debug.obj
+__CFG_IESO$OFF 0 0 ABS 0 - dist/default/debug\WD1SolderStation.X.debug.obj
+_USER_FastDecrementSetpoint 2ABA 0 CODE 0 text6 dist/default/debug\WD1SolderStation.X.debug.obj
+LCD_Dec2Bcd@ptrBCD E5 0 BANK0 1 cstackBANK0 dist/default/debug\WD1SolderStation.X.debug.obj
+__Hibigdata 0 0 CODE 0 ibigdata dist/default/debug\WD1SolderStation.X.debug.obj
+__mediumconst 0 0 MEDIUMCONST 0 mediumconst dist/default/debug\startup.obj
+__Heeprom_data 0 0 EEDATA 0 eeprom_data dist/default/debug\WD1SolderStation.X.debug.obj
+?_ADC_GetVoltageMV E3 0 BANK0 1 cstackBANK0 dist/default/debug\WD1SolderStation.X.debug.obj
+__end_of_I2C_Start 259A 0 CODE 0 text38 dist/default/debug\WD1SolderStation.X.debug.obj
+_u8_LCD_Data_Ext 100 0 BANK1 1 bssBANK1 dist/default/debug\WD1SolderStation.X.debug.obj
+__Lsmallconst 1000 0 SMALLCONST 0 smallconst dist/default/debug\WD1SolderStation.X.debug.obj
+_IOFS 7E9A 0 ABS 0 - dist/default/debug\WD1SolderStation.X.debug.obj
+_LATA F89 0 ABS 0 - dist/default/debug\WD1SolderStation.X.debug.obj
+_LATB F8A 0 ABS 0 - dist/default/debug\WD1SolderStation.X.debug.obj
+_LATC F8B 0 ABS 0 - dist/default/debug\WD1SolderStation.X.debug.obj
+_LATD F8C 0 ABS 0 - dist/default/debug\WD1SolderStation.X.debug.obj
+_TMR2 FCC 0 ABS 0 - dist/default/debug\WD1SolderStation.X.debug.obj
+___sp 0 0 STACK 2 stack dist/default/debug\startup.obj
+_main 2702 0 CODE 0 text0 dist/default/debug\WD1SolderStation.X.debug.obj
+__size_of_I2C_Start 0 0 ABS 0 - dist/default/debug\WD1SolderStation.X.debug.obj
+btemp 28 0 COMRAM 1 temp dist/default/debug\WD1SolderStation.X.debug.obj
+_BUTTONS_GetState 276C 0 CODE 0 text11 dist/default/debug\WD1SolderStation.X.debug.obj
+start E 0 CODE 0 init dist/default/debug\startup.obj
+__size_of_SYSTEM_DisableInterrupts 0 0 ABS 0 - dist/default/debug\WD1SolderStation.X.debug.obj
+__end_of_u8_SoftwareVersion 100F 0 SMALLCONST 0 smallconst dist/default/debug\WD1SolderStation.X.debug.obj
+__size_of___aldiv 0 0 ABS 0 - dist/default/debug\WD1SolderStation.X.debug.obj
+__CFG_BOREN$OFF 0 0 ABS 0 - dist/default/debug\WD1SolderStation.X.debug.obj
+__size_of_main 0 0 ABS 0 - dist/default/debug\WD1SolderStation.X.debug.obj
+__size_of___lldiv 0 0 ABS 0 - dist/default/debug\WD1SolderStation.X.debug.obj
+__size_of___lwdiv 0 0 ABS 0 - dist/default/debug\WD1SolderStation.X.debug.obj
+__size_of___lwmod 0 0 ABS 0 - dist/default/debug\WD1SolderStation.X.debug.obj
+LCD_GetData@u8_Position E5 0 BANK0 1 cstackBANK0 dist/default/debug\WD1SolderStation.X.debug.obj
+CONTROL_Task@s16_prevError A7 0 BANK0 1 bssBANK0 dist/default/debug\WD1SolderStation.X.debug.obj
+_LCD_GetData 2A88 0 CODE 0 text22 dist/default/debug\WD1SolderStation.X.debug.obj
+?___lmul 1 0 COMRAM 1 cstackCOMRAM dist/default/debug\WD1SolderStation.X.debug.obj
+__end_of_LCD_SetData 2910 0 CODE 0 text36 dist/default/debug\WD1SolderStation.X.debug.obj
+_si32_TempSensorGain 1009 0 SMALLCONST 0 smallconst dist/default/debug\WD1SolderStation.X.debug.obj
+__size_of_I2C_Init 0 0 ABS 0 - dist/default/debug\WD1SolderStation.X.debug.obj
+__size_of_I2C_Stop 0 0 ABS 0 - dist/default/debug\WD1SolderStation.X.debug.obj
+_LCD_Init 1A86 0 CODE 0 text35 dist/default/debug\WD1SolderStation.X.debug.obj
+_LCD_Task 2150 0 CODE 0 text34 dist/default/debug\WD1SolderStation.X.debug.obj
+_I2C_Start 2516 0 CODE 0 text38 dist/default/debug\WD1SolderStation.X.debug.obj
+__Hpowerup E 0 CODE 0 powerup dist/default/debug\WD1SolderStation.X.debug.obj
+NVM_Task@bFlag_StateWriteLowByte BA 0 BANK0 1 bssBANK0 dist/default/debug\WD1SolderStation.X.debug.obj
+_t_Buttons CC 0 BANK0 1 bssBANK0 dist/default/debug\WD1SolderStation.X.debug.obj
+__size_of_ADC_GetTemperature 0 0 ABS 0 - dist/default/debug\WD1SolderStation.X.debug.obj
+LCD_SetData@u8_Data E6 0 BANK0 1 cstackBANK0 dist/default/debug\WD1SolderStation.X.debug.obj
+__size_of_ADC_Init 0 0 ABS 0 - dist/default/debug\WD1SolderStation.X.debug.obj
+__size_of_ADC_Task 0 0 ABS 0 - dist/default/debug\WD1SolderStation.X.debug.obj
+__accesstop 80 0 ABS 0 - dist/default/debug\startup.obj
+__end_of_LCD_Init 1C18 0 CODE 0 text35 dist/default/debug\WD1SolderStation.X.debug.obj
+intlevel0 0 0 CODE 0 text dist/default/debug\startup.obj
+intlevel1 0 0 CODE 0 text dist/default/debug\startup.obj
+intlevel2 0 0 CODE 0 text dist/default/debug\startup.obj
+intlevel3 0 0 CODE 0 text dist/default/debug\startup.obj
+__end_of_LCD_Task 2226 0 CODE 0 text34 dist/default/debug\WD1SolderStation.X.debug.obj
+_TIMER_GetSysTick 2C16 0 CODE 0 text39 dist/default/debug\WD1SolderStation.X.debug.obj
+_u8_LCD_DeviceSelect 1012 0 SMALLCONST 0 smallconst dist/default/debug\WD1SolderStation.X.debug.obj
+__end_of_LCD_SetMainDigits 2150 0 CODE 0 text10 dist/default/debug\WD1SolderStation.X.debug.obj
+___aldiv@divisor 11 0 COMRAM 1 cstackCOMRAM dist/default/debug\WD1SolderStation.X.debug.obj
+__LnvFARRAM 0 0 FARRAM 0 nvFARRAM dist/default/debug\WD1SolderStation.X.debug.obj
+wtemp6 29 0 COMRAM 1 temp dist/default/debug\WD1SolderStation.X.debug.obj
+__CFG_EBTR0$OFF 0 0 ABS 0 - dist/default/debug\WD1SolderStation.X.debug.obj
+__CFG_EBTR1$OFF 0 0 ABS 0 - dist/default/debug\WD1SolderStation.X.debug.obj
+__CFG_EBTR2$OFF 0 0 ABS 0 - dist/default/debug\WD1SolderStation.X.debug.obj
+__CFG_EBTR3$OFF 0 0 ABS 0 - dist/default/debug\WD1SolderStation.X.debug.obj
+__end_of_TIMER_IncrementSysTick 2C38 0 CODE 0 text52 dist/default/debug\WD1SolderStation.X.debug.obj
+_u8_SoftwareVersion 100D 0 SMALLCONST 0 smallconst dist/default/debug\WD1SolderStation.X.debug.obj
+__CFG_EBTRB$OFF 0 0 ABS 0 - dist/default/debug\WD1SolderStation.X.debug.obj
+__Hifardata 0 0 CODE 0 ifardata dist/default/debug\WD1SolderStation.X.debug.obj
+___aldiv@sign 16 0 COMRAM 1 cstackCOMRAM dist/default/debug\WD1SolderStation.X.debug.obj
+__Hclrtext 0 0 ABS 0 clrtext dist/default/debug\WD1SolderStation.X.debug.obj
+USER_Task@u16_TemporarySetpoint A5 0 BANK0 1 bssBANK0 dist/default/debug\WD1SolderStation.X.debug.obj
+_I2C_SendData 2B06 0 CODE 0 text40 dist/default/debug\WD1SolderStation.X.debug.obj
+__end_of_USER_IncrementSetpoint 2B48 0 CODE 0 text4 dist/default/debug\WD1SolderStation.X.debug.obj
+_LCD_Dec2Bcd 246E 0 CODE 0 text17 dist/default/debug\WD1SolderStation.X.debug.obj
+USER_Task@u16_SaveCurrentSettingCounter 9F 0 BANK0 1 bssBANK0 dist/default/debug\WD1SolderStation.X.debug.obj
+USER_FastIncrementSetpoint@u8_FastIncrementCounter BF 0 BANK0 1 bssBANK0 dist/default/debug\WD1SolderStation.X.debug.obj
+LCD_SetPresetDigits@u16_PresetData E7 0 BANK0 1 cstackBANK0 dist/default/debug\WD1SolderStation.X.debug.obj
+__size_of_LCD_Bcd2Segment 0 0 ABS 0 - dist/default/debug\WD1SolderStation.X.debug.obj
+__size_of_USER_DecrementSetpoint 0 0 ABS 0 - dist/default/debug\WD1SolderStation.X.debug.obj
+_ADCON0 FC2 0 ABS 0 - dist/default/debug\WD1SolderStation.X.debug.obj
+_ADCON1 FC1 0 ABS 0 - dist/default/debug\WD1SolderStation.X.debug.obj
+_ADCON2 FC0 0 ABS 0 - dist/default/debug\WD1SolderStation.X.debug.obj
+___inthi_sp 0 0 STACK 2 stack dist/default/debug\startup.obj
+LCD_Task@u8_LCD_DataCounter C7 0 BANK0 1 bssBANK0 dist/default/debug\WD1SolderStation.X.debug.obj
+___intlo_sp 0 0 STACK 2 stack dist/default/debug\startup.obj
+_EECON1bits FA6 0 ABS 0 - dist/default/debug\WD1SolderStation.X.debug.obj
+_ADC_GetVoltageFiltered 2226 0 CODE 0 text46 dist/default/debug\WD1SolderStation.X.debug.obj
+_SYSTEM_EnableInterrupts 2C72 0 CODE 0 text31 dist/default/debug\WD1SolderStation.X.debug.obj
+__size_of_USER_FastIncrementSetpoint 0 0 ABS 0 - dist/default/debug\WD1SolderStation.X.debug.obj
+LCD_Dec2Bcd@u16_DecimalData E3 0 BANK0 1 cstackBANK0 dist/default/debug\WD1SolderStation.X.debug.obj
+_I2C_Init 2B86 0 CODE 0 text41 dist/default/debug\WD1SolderStation.X.debug.obj
+_I2C_Stop 2C7E 0 CODE 0 text37 dist/default/debug\WD1SolderStation.X.debug.obj
+__Hintcode_body 0 0 ABS 0 intcode_body dist/default/debug\WD1SolderStation.X.debug.obj
+__end_of___lmul 2818 0 CODE 0 text47 dist/default/debug\WD1SolderStation.X.debug.obj
+__end_of_SYSTEM_EnableInterrupts 2C78 0 CODE 0 text31 dist/default/debug\WD1SolderStation.X.debug.obj
+_LCD_Update 2BDA 0 CODE 0 text15 dist/default/debug\WD1SolderStation.X.debug.obj
+USER_Task@u32_WatchdogCounter 8F 0 BANK0 1 bssBANK0 dist/default/debug\WD1SolderStation.X.debug.obj
+_EECON1 FA6 0 ABS 0 - dist/default/debug\WD1SolderStation.X.debug.obj
+_EECON2 FA7 0 ABS 0 - dist/default/debug\WD1SolderStation.X.debug.obj
+_EEDATA FA8 0 ABS 0 - dist/default/debug\WD1SolderStation.X.debug.obj
+__Lintsave_regs 0 0 BIGRAM 1 intsave_regs dist/default/debug\WD1SolderStation.X.debug.obj
+_bFlag_SysTick BD 0 BANK0 1 bssBANK0 dist/default/debug\WD1SolderStation.X.debug.obj
+__end_of_BUTTONS_GetState 27C2 0 CODE 0 text11 dist/default/debug\WD1SolderStation.X.debug.obj
+__end_of_SYSTEM_DisableInterrupts 2C7E 0 CODE 0 text32 dist/default/debug\WD1SolderStation.X.debug.obj
+__Hmediumconst 0 0 MEDIUMCONST 0 mediumconst dist/default/debug\WD1SolderStation.X.debug.obj
+__end_of_I2C_Init 2BA4 0 CODE 0 text41 dist/default/debug\WD1SolderStation.X.debug.obj
+__end_of_I2C_Stop 2C82 0 CODE 0 text37 dist/default/debug\WD1SolderStation.X.debug.obj
+_ADC_Init 2BA4 0 CODE 0 text49 dist/default/debug\WD1SolderStation.X.debug.obj
+_ADC_Task 1674 0 CODE 0 text44 dist/default/debug\WD1SolderStation.X.debug.obj
+__Hintcodelo E 0 CODE 0 intcodelo dist/default/debug\WD1SolderStation.X.debug.obj
+___lwmod@divisor A 0 COMRAM 1 cstackCOMRAM dist/default/debug\WD1SolderStation.X.debug.obj
+__end_of___aldiv 23BE 0 CODE 0 text48 dist/default/debug\WD1SolderStation.X.debug.obj
+_u8_LCD_ModeSet 1011 0 SMALLCONST 0 smallconst dist/default/debug\WD1SolderStation.X.debug.obj
+__end_of___lldiv 261C 0 CODE 0 text45 dist/default/debug\WD1SolderStation.X.debug.obj
+__end_of___lwdiv 28BE 0 CODE 0 text19 dist/default/debug\WD1SolderStation.X.debug.obj
+__end_of___lwmod 299E 0 CODE 0 text18 dist/default/debug\WD1SolderStation.X.debug.obj
+__size_of_BUTTONS_GetState 0 0 ABS 0 - dist/default/debug\WD1SolderStation.X.debug.obj
+_t_Temperatures 80 0 BANK0 1 bssBANK0 dist/default/debug\WD1SolderStation.X.debug.obj
+__size_of_I2C_SendData 0 0 ABS 0 - dist/default/debug\WD1SolderStation.X.debug.obj
+_INTCON FF2 0 ABS 0 - dist/default/debug\WD1SolderStation.X.debug.obj
+__end_of_ADC_Init 2BC2 0 CODE 0 text49 dist/default/debug\WD1SolderStation.X.debug.obj
+_USER_TemperatureFilter 261C 0 CODE 0 text2 dist/default/debug\WD1SolderStation.X.debug.obj
+__end_of_ADC_Task 1890 0 CODE 0 text44 dist/default/debug\WD1SolderStation.X.debug.obj
+_u16_ControlOutput AB 0 BANK0 1 bssBANK0 dist/default/debug\WD1SolderStation.X.debug.obj
+NVM_Task@u16_TempAddress 99 0 BANK0 1 bssBANK0 dist/default/debug\WD1SolderStation.X.debug.obj
+__size_of_LCD_SetPresetDigits 0 0 ABS 0 - dist/default/debug\WD1SolderStation.X.debug.obj
+__end_of_si32_TempSensorGain 100D 0 SMALLCONST 0 smallconst dist/default/debug\WD1SolderStation.X.debug.obj
+CONTROL_Task@s16_Error A9 0 BANK0 1 bssBANK0 dist/default/debug\WD1SolderStation.X.debug.obj
+___lwdiv@quotient 6 0 COMRAM 1 cstackCOMRAM dist/default/debug\WD1SolderStation.X.debug.obj
+?_ADC_GetVoltageFiltered E3 0 BANK0 1 cstackBANK0 dist/default/debug\WD1SolderStation.X.debug.obj
+main@u8_TaskCounter100ms 172 0 BANK1 1 cstackBANK1 dist/default/debug\WD1SolderStation.X.debug.obj
+__size_of_TIMER_SetSysTickFlag 0 0 ABS 0 - dist/default/debug\WD1SolderStation.X.debug.obj
+__end_of_TIMER_ResetSysTickFlag 2C54 0 CODE 0 text24 dist/default/debug\WD1SolderStation.X.debug.obj
+_INTCON3bits FF0 0 ABS 0 - dist/default/debug\WD1SolderStation.X.debug.obj
+___lwmod@dividend 8 0 COMRAM 1 cstackCOMRAM dist/default/debug\WD1SolderStation.X.debug.obj
+___lldiv@counter 27 0 COMRAM 1 cstackCOMRAM dist/default/debug\WD1SolderStation.X.debug.obj
+__Lintcodelo E 0 CODE 0 intcodelo dist/default/debug\WD1SolderStation.X.debug.obj
+__CFG_FCMEN$OFF 0 0 ABS 0 - dist/default/debug\WD1SolderStation.X.debug.obj
+__CFG_MCLRE$OFF 0 0 ABS 0 - dist/default/debug\WD1SolderStation.X.debug.obj
+__end_of_TIMER_GetSysTick 2C28 0 CODE 0 text39 dist/default/debug\WD1SolderStation.X.debug.obj
+start_initialization 2AE4 0 CODE 0 cinit dist/default/debug\WD1SolderStation.X.debug.obj
+_USER_FastIncrementSetpoint 2A56 0 CODE 0 text5 dist/default/debug\WD1SolderStation.X.debug.obj
+__end_of_SYSTEM_Init 2C16 0 CODE 0 text27 dist/default/debug\WD1SolderStation.X.debug.obj
+__size_of_PWM_ResetSyncTrigger 0 0 ABS 0 - dist/default/debug\WD1SolderStation.X.debug.obj
+_OSCCON FD3 0 ABS 0 - dist/default/debug\WD1SolderStation.X.debug.obj
+__HnvFARRAM 0 0 FARRAM 0 nvFARRAM dist/default/debug\WD1SolderStation.X.debug.obj
+_LCD_SetMainDigits 2012 0 CODE 0 text10 dist/default/debug\WD1SolderStation.X.debug.obj
+__end_of_I2C_SendData 2B28 0 CODE 0 text40 dist/default/debug\WD1SolderStation.X.debug.obj
+BUTTONS_Task@u8_ButtonsTemporaryInput E3 0 BANK0 1 cstackBANK0 dist/default/debug\WD1SolderStation.X.debug.obj
+___aldiv@quotient 17 0 COMRAM 1 cstackCOMRAM dist/default/debug\WD1SolderStation.X.debug.obj
+___lldiv@dividend 1B 0 COMRAM 1 cstackCOMRAM dist/default/debug\WD1SolderStation.X.debug.obj
+__size_of_TIMER_GetSysTick 0 0 ABS 0 - dist/default/debug\WD1SolderStation.X.debug.obj
+I2C_SendData@u8_Data E4 0 BANK0 1 cstackBANK0 dist/default/debug\WD1SolderStation.X.debug.obj
+__end_of_u8_LCD_DeviceSelect 1013 0 SMALLCONST 0 smallconst dist/default/debug\WD1SolderStation.X.debug.obj
+___rparam_used 0 0 ABS 0 - dist/default/debug\WD1SolderStation.X.debug.obj
+__end_of_TIMER_SetSysTickFlag 2C64 0 CODE 0 text51 dist/default/debug\WD1SolderStation.X.debug.obj
+__CFG_STVREN$OFF 0 0 ABS 0 - dist/default/debug\WD1SolderStation.X.debug.obj
+PWM_SetDutyCycle@u16_DutyCycle E3 0 BANK0 1 cstackBANK0 dist/default/debug\WD1SolderStation.X.debug.obj
+__CFG_WDTPS$32768 0 0 ABS 0 - dist/default/debug\WD1SolderStation.X.debug.obj
+LCD_Bcd2Segment@u8_Data E4 0 BANK0 1 cstackBANK0 dist/default/debug\WD1SolderStation.X.debug.obj
+__size_of_LCD_SetData 0 0 ABS 0 - dist/default/debug\WD1SolderStation.X.debug.obj
+?_USER_TemperatureFilter E5 0 BANK0 1 cstackBANK0 dist/default/debug\WD1SolderStation.X.debug.obj
+__end_of_LCD_Update 2BF0 0 CODE 0 text15 dist/default/debug\WD1SolderStation.X.debug.obj
+__pcstackBANK0 D1 0 BANK0 1 cstackBANK0 dist/default/debug\WD1SolderStation.X.debug.obj
+__pcstackBANK1 15F 0 BANK1 1 cstackBANK1 dist/default/debug\WD1SolderStation.X.debug.obj
+_SSPADD FC8 0 ABS 0 - dist/default/debug\WD1SolderStation.X.debug.obj
+_SSPBUF FC9 0 ABS 0 - dist/default/debug\WD1SolderStation.X.debug.obj
+LCD_SetData@u8_Position E3 0 BANK0 1 cstackBANK0 dist/default/debug\WD1SolderStation.X.debug.obj
+__size_of_PWM_SetSyncTrigger 0 0 ABS 0 - dist/default/debug\WD1SolderStation.X.debug.obj
+__end_of_PWM_ResetSyncTrigger 2C5C 0 CODE 0 text29 dist/default/debug\WD1SolderStation.X.debug.obj
+_TMR2IP 7CF9 0 ABS 0 - dist/default/debug\WD1SolderStation.X.debug.obj
+_TRISC3 7CA3 0 ABS 0 - dist/default/debug\WD1SolderStation.X.debug.obj
+_TRISC4 7CA4 0 ABS 0 - dist/default/debug\WD1SolderStation.X.debug.obj
+__end_of_u8_LCD_ModeSet 1012 0 SMALLCONST 0 smallconst dist/default/debug\WD1SolderStation.X.debug.obj
+_LCD_SetPresetDigits 1890 0 CODE 0 text16 dist/default/debug\WD1SolderStation.X.debug.obj
+USER_TemperatureFilter@u16_FilterTemporary E7 0 BANK0 1 cstackBANK0 dist/default/debug\WD1SolderStation.X.debug.obj
+__end_of_LCD_Clear 2B68 0 CODE 0 text23 dist/default/debug\WD1SolderStation.X.debug.obj
+BUTTONS_Task@u8_ButtonsStatusPressed CA 0 BANK0 1 bssBANK0 dist/default/debug\WD1SolderStation.X.debug.obj
+USER_Task@u8_DisplayChangeCounter C1 0 BANK0 1 bssBANK0 dist/default/debug\WD1SolderStation.X.debug.obj
+__Hbank0 0 0 ABS 0 bank0 dist/default/debug\WD1SolderStation.X.debug.obj
+__Hbank1 0 0 ABS 0 bank1 dist/default/debug\WD1SolderStation.X.debug.obj
+__Hbank2 0 0 ABS 0 bank2 dist/default/debug\WD1SolderStation.X.debug.obj
+__Hbank3 0 0 ABS 0 bank3 dist/default/debug\WD1SolderStation.X.debug.obj
+__Hbank4 0 0 ABS 0 bank4 dist/default/debug\WD1SolderStation.X.debug.obj
+__Hbank5 0 0 ABS 0 bank5 dist/default/debug\WD1SolderStation.X.debug.obj
+__Hbank6 0 0 ABS 0 bank6 dist/default/debug\WD1SolderStation.X.debug.obj
+__Hbank7 0 0 ABS 0 bank7 dist/default/debug\WD1SolderStation.X.debug.obj
+__Hbank8 0 0 ABS 0 bank8 dist/default/debug\WD1SolderStation.X.debug.obj
+__Hbank9 0 0 ABS 0 bank9 dist/default/debug\WD1SolderStation.X.debug.obj
+__Hcinit 0 0 ABS 0 cinit dist/default/debug\WD1SolderStation.X.debug.obj
+__Hconst 0 0 CONST 0 const dist/default/debug\WD1SolderStation.X.debug.obj
+__Hidata 0 0 CODE 0 idata dist/default/debug\WD1SolderStation.X.debug.obj
+__Hidloc 0 0 IDLOC 0 idloc dist/default/debug\WD1SolderStation.X.debug.obj
+__size_of_LCD_Clear 0 0 ABS 0 - dist/default/debug\WD1SolderStation.X.debug.obj
+__Hnvbit 0 0 COMRAM 1 nvbit dist/default/debug\WD1SolderStation.X.debug.obj
+__Hparam 0 0 BANK0 1 param0 dist/default/debug\WD1SolderStation.X.debug.obj
+__Hrdata 0 0 COMRAM 1 rdata dist/default/debug\WD1SolderStation.X.debug.obj
+__Hstack 0 0 STACK 2 stack dist/default/debug\WD1SolderStation.X.debug.obj
+__Htext0 0 0 ABS 0 text0 dist/default/debug\WD1SolderStation.X.debug.obj
+__Htext1 0 0 ABS 0 text1 dist/default/debug\WD1SolderStation.X.debug.obj
+__Htext2 0 0 ABS 0 text2 dist/default/debug\WD1SolderStation.X.debug.obj
+__Htext3 0 0 ABS 0 text3 dist/default/debug\WD1SolderStation.X.debug.obj
+__Htext4 0 0 ABS 0 text4 dist/default/debug\WD1SolderStation.X.debug.obj
+__Htext5 0 0 ABS 0 text5 dist/default/debug\WD1SolderStation.X.debug.obj
+__Htext6 0 0 ABS 0 text6 dist/default/debug\WD1SolderStation.X.debug.obj
+__Htext7 0 0 ABS 0 text7 dist/default/debug\WD1SolderStation.X.debug.obj
+__Htext8 0 0 ABS 0 text8 dist/default/debug\WD1SolderStation.X.debug.obj
+__Htext9 0 0 ABS 0 text9 dist/default/debug\WD1SolderStation.X.debug.obj
+___lwdiv@counter 5 0 COMRAM 1 cstackCOMRAM dist/default/debug\WD1SolderStation.X.debug.obj
+__Hbank10 0 0 ABS 0 bank10 dist/default/debug\WD1SolderStation.X.debug.obj
+__Hbank11 0 0 ABS 0 bank11 dist/default/debug\WD1SolderStation.X.debug.obj
+__Hbank12 0 0 ABS 0 bank12 dist/default/debug\WD1SolderStation.X.debug.obj
+__Hbank13 0 0 ABS 0 bank13 dist/default/debug\WD1SolderStation.X.debug.obj
+__Hbank14 0 0 ABS 0 bank14 dist/default/debug\WD1SolderStation.X.debug.obj
+__Hbank15 0 0 ABS 0 bank15 dist/default/debug\WD1SolderStation.X.debug.obj
+USER_Task@u8_ErroState C2 0 BANK0 1 bssBANK0 dist/default/debug\WD1SolderStation.X.debug.obj
+__Hbigbss 0 0 BIGRAM 1 bigbss dist/default/debug\WD1SolderStation.X.debug.obj
+__Hbigram 0 0 ABS 0 bigram dist/default/debug\WD1SolderStation.X.debug.obj
+__smallconst 1000 0 SMALLCONST 0 smallconst dist/default/debug\startup.obj
+USER_Task@u16_ShowCurrentSettingCounter 9D 0 BANK0 1 bssBANK0 dist/default/debug\WD1SolderStation.X.debug.obj
+__end_of_u8_LCD_BankSelect 1010 0 SMALLCONST 0 smallconst dist/default/debug\WD1SolderStation.X.debug.obj
+__Hcomram 0 0 ABS 0 comram dist/default/debug\WD1SolderStation.X.debug.obj
+__Hconfig 30000E 0 CONFIG 0 config dist/default/debug\WD1SolderStation.X.debug.obj
+__CFG_LPT1OSC$OFF 0 0 ABS 0 - dist/default/debug\WD1SolderStation.X.debug.obj
+?_ADC_GetTemperature E3 0 BANK0 1 cstackBANK0 dist/default/debug\WD1SolderStation.X.debug.obj
+NVM_Write@u16_Data E3 0 BANK0 1 cstackBANK0 dist/default/debug\WD1SolderStation.X.debug.obj
+__Lbank0 0 0 ABS 0 bank0 dist/default/debug\WD1SolderStation.X.debug.obj
+__Lbank1 0 0 ABS 0 bank1 dist/default/debug\WD1SolderStation.X.debug.obj
+__Lbank2 0 0 ABS 0 bank2 dist/default/debug\WD1SolderStation.X.debug.obj
+__Lbank3 0 0 ABS 0 bank3 dist/default/debug\WD1SolderStation.X.debug.obj
+__Lbank4 0 0 ABS 0 bank4 dist/default/debug\WD1SolderStation.X.debug.obj
+__Lbank5 0 0 ABS 0 bank5 dist/default/debug\WD1SolderStation.X.debug.obj
+__Lbank6 0 0 ABS 0 bank6 dist/default/debug\WD1SolderStation.X.debug.obj
+__Lbank7 0 0 ABS 0 bank7 dist/default/debug\WD1SolderStation.X.debug.obj
+__Lbank8 0 0 ABS 0 bank8 dist/default/debug\WD1SolderStation.X.debug.obj
+__Lbank9 0 0 ABS 0 bank9 dist/default/debug\WD1SolderStation.X.debug.obj
+__Lcinit 0 0 ABS 0 cinit dist/default/debug\WD1SolderStation.X.debug.obj
+__Lconst 0 0 CONST 0 const dist/default/debug\WD1SolderStation.X.debug.obj
+__Lidata 0 0 CODE 0 idata dist/default/debug\WD1SolderStation.X.debug.obj
+__Lidloc 0 0 IDLOC 0 idloc dist/default/debug\WD1SolderStation.X.debug.obj
+__Lnvbit 0 0 COMRAM 1 nvbit dist/default/debug\WD1SolderStation.X.debug.obj
+__Lparam 0 0 BANK0 1 param0 dist/default/debug\WD1SolderStation.X.debug.obj
+__Lrdata 0 0 COMRAM 1 rdata dist/default/debug\WD1SolderStation.X.debug.obj
+__Lstack 0 0 STACK 2 stack dist/default/debug\WD1SolderStation.X.debug.obj
+__Ltext0 0 0 ABS 0 text0 dist/default/debug\WD1SolderStation.X.debug.obj
+__Ltext1 0 0 ABS 0 text1 dist/default/debug\WD1SolderStation.X.debug.obj
+__Ltext2 0 0 ABS 0 text2 dist/default/debug\WD1SolderStation.X.debug.obj
+__Ltext3 0 0 ABS 0 text3 dist/default/debug\WD1SolderStation.X.debug.obj
+__Ltext4 0 0 ABS 0 text4 dist/default/debug\WD1SolderStation.X.debug.obj
+__Ltext5 0 0 ABS 0 text5 dist/default/debug\WD1SolderStation.X.debug.obj
+__Ltext6 0 0 ABS 0 text6 dist/default/debug\WD1SolderStation.X.debug.obj
+__Ltext7 0 0 ABS 0 text7 dist/default/debug\WD1SolderStation.X.debug.obj
+__Ltext8 0 0 ABS 0 text8 dist/default/debug\WD1SolderStation.X.debug.obj
+__Ltext9 0 0 ABS 0 text9 dist/default/debug\WD1SolderStation.X.debug.obj
+__end_of_USER_Init 1EC6 0 CODE 0 text13 dist/default/debug\WD1SolderStation.X.debug.obj
+__end_of_USER_Task 13EC 0 CODE 0 text1 dist/default/debug\WD1SolderStation.X.debug.obj
+__Hfarbss 0 0 FARRAM 0 farbss dist/default/debug\WD1SolderStation.X.debug.obj
+_LCD_Clear 2B48 0 CODE 0 text23 dist/default/debug\WD1SolderStation.X.debug.obj
+__Lintcode_body 0 0 ABS 0 intcode_body dist/default/debug\WD1SolderStation.X.debug.obj
+__size_of_USER_Init 0 0 ABS 0 - dist/default/debug\WD1SolderStation.X.debug.obj
+__size_of_USER_Task 0 0 ABS 0 - dist/default/debug\WD1SolderStation.X.debug.obj
+_PORTCbits F82 0 ABS 0 - dist/default/debug\WD1SolderStation.X.debug.obj
+_INTCONbits FF2 0 ABS 0 - dist/default/debug\WD1SolderStation.X.debug.obj
+_u8_ErrorRegister CB 0 BANK0 1 bssBANK0 dist/default/debug\WD1SolderStation.X.debug.obj
+__CFG_OSC$INTIO67 0 0 ABS 0 - dist/default/debug\WD1SolderStation.X.debug.obj
+__Habs1 0 0 ABS 0 abs1 dist/default/debug\WD1SolderStation.X.debug.obj
+__Hdata 0 0 ABS 0 data dist/default/debug\WD1SolderStation.X.debug.obj
+__Hinit 12 0 CODE 0 init dist/default/debug\WD1SolderStation.X.debug.obj
+__Hrbit 0 0 COMRAM 1 rbit dist/default/debug\WD1SolderStation.X.debug.obj
+__Hrbss 0 0 COMRAM 1 rbss dist/default/debug\WD1SolderStation.X.debug.obj
+__Htemp 29 0 COMRAM 1 temp dist/default/debug\WD1SolderStation.X.debug.obj
+__Htext 0 0 ABS 0 text dist/default/debug\WD1SolderStation.X.debug.obj
+__size_of_TIMER_IncrementSysTick 0 0 ABS 0 - dist/default/debug\WD1SolderStation.X.debug.obj
+__Labs1 0 0 ABS 0 abs1 dist/default/debug\WD1SolderStation.X.debug.obj
+__Ldata 0 0 ABS 0 data dist/default/debug\WD1SolderStation.X.debug.obj
+__Linit E 0 CODE 0 init dist/default/debug\WD1SolderStation.X.debug.obj
+__Lrbit 0 0 COMRAM 1 rbit dist/default/debug\WD1SolderStation.X.debug.obj
+__Lrbss 0 0 COMRAM 1 rbss dist/default/debug\WD1SolderStation.X.debug.obj
+__Ltemp 28 0 COMRAM 1 temp dist/default/debug\WD1SolderStation.X.debug.obj
+__Ltext 0 0 ABS 0 text dist/default/debug\WD1SolderStation.X.debug.obj
+__CFG_XINST$OFF 0 0 ABS 0 - dist/default/debug\WD1SolderStation.X.debug.obj
+_BUTTONS_Task 13EC 0 CODE 0 text43 dist/default/debug\WD1SolderStation.X.debug.obj
+___lmul 27C2 0 CODE 0 text47 dist/default/debug\WD1SolderStation.X.debug.obj
+__LcstackBANK0 0 0 ABS 0 cstackBANK0 dist/default/debug\WD1SolderStation.X.debug.obj
+__LcstackBANK1 0 0 ABS 0 cstackBANK1 dist/default/debug\WD1SolderStation.X.debug.obj
+__end_of_LCD_GetData 2ABA 0 CODE 0 text22 dist/default/debug\WD1SolderStation.X.debug.obj
+int$flags 28 0 COMRAM 1 temp dist/default/debug\WD1SolderStation.X.debug.obj
+__HcstackCOMRAM 0 0 ABS 0 cstackCOMRAM dist/default/debug\WD1SolderStation.X.debug.obj
+ADC_GetVoltageFiltered@s32_FilterTemporary E7 0 BANK0 1 cstackBANK0 dist/default/debug\WD1SolderStation.X.debug.obj
+__Hintret 0 0 ABS 0 intret dist/default/debug\WD1SolderStation.X.debug.obj
+__Hirdata 0 0 CODE 0 irdata dist/default/debug\WD1SolderStation.X.debug.obj
+LCD_SetPresetDigits@u8_Preset E9 0 BANK0 1 cstackBANK0 dist/default/debug\WD1SolderStation.X.debug.obj
+_ISR 8 0 CODE 0 intcode dist/default/debug\WD1SolderStation.X.debug.obj
+_PEN 7E2A 0 ABS 0 - dist/default/debug\WD1SolderStation.X.debug.obj
+_PR2 FCB 0 ABS 0 - dist/default/debug\WD1SolderStation.X.debug.obj
+_SEN 7E28 0 ABS 0 - dist/default/debug\WD1SolderStation.X.debug.obj
+__S0 30000E 0 ABS 0 - dist/default/debug\WD1SolderStation.X.debug.obj
+__S1 173 0 ABS 0 - dist/default/debug\WD1SolderStation.X.debug.obj
+__S2 0 0 ABS 0 - dist/default/debug\WD1SolderStation.X.debug.obj
+__end_of_GPIO_Init 29DE 0 CODE 0 text42 dist/default/debug\WD1SolderStation.X.debug.obj
+__size_of_USER_IncrementSetpoint 0 0 ABS 0 - dist/default/debug\WD1SolderStation.X.debug.obj
+__size_of_GPIO_Init 0 0 ABS 0 - dist/default/debug\WD1SolderStation.X.debug.obj
+_u8_LCD_Datapointer C8 0 BANK0 1 bssBANK0 dist/default/debug\WD1SolderStation.X.debug.obj
+_u8_LCD_Data 110 0 BANK1 1 bssBANK1 dist/default/debug\WD1SolderStation.X.debug.obj
+_USER_Init 1D7A 0 CODE 0 text13 dist/default/debug\WD1SolderStation.X.debug.obj
+_USER_Task 1014 0 CODE 0 text1 dist/default/debug\WD1SolderStation.X.debug.obj
+__end_of_ADC_GetVoltageFiltered 22F2 0 CODE 0 text46 dist/default/debug\WD1SolderStation.X.debug.obj
+__CFG_PBADEN$OFF 0 0 ABS 0 - dist/default/debug\WD1SolderStation.X.debug.obj
+__size_of_TIMER_GetSysTickFlag 0 0 ABS 0 - dist/default/debug\WD1SolderStation.X.debug.obj
+USER_TemperatureFilter@u16_FilterArray 14A 0 BANK1 1 bssBANK1 dist/default/debug\WD1SolderStation.X.debug.obj
+__Lbigdata 0 0 BIGRAM 1 bigdata dist/default/debug\WD1SolderStation.X.debug.obj
+__Hnvrram 0 0 COMRAM 1 nvrram dist/default/debug\WD1SolderStation.X.debug.obj
+_TIMER_Init 2BF0 0 CODE 0 text25 dist/default/debug\WD1SolderStation.X.debug.obj
+__end_of_ISR 246E 0 CODE 0 intcode_body dist/default/debug\WD1SolderStation.X.debug.obj
+_GPIO_Init 299E 0 CODE 0 text42 dist/default/debug\WD1SolderStation.X.debug.obj
+__Hparam0 0 0 BANK0 1 param0 dist/default/debug\WD1SolderStation.X.debug.obj
+int_func 23BE 0 CODE 0 intcode_body dist/default/debug\WD1SolderStation.X.debug.obj
+_ADC_GetVoltageMV 2C42 0 CODE 0 text12 dist/default/debug\WD1SolderStation.X.debug.obj
+__CFG_CCP2MX$PORTC 0 0 ABS 0 - dist/default/debug\WD1SolderStation.X.debug.obj
+__Lintentry 0 0 ABS 0 intentry dist/default/debug\WD1SolderStation.X.debug.obj
+___lldiv@divisor 1F 0 COMRAM 1 cstackCOMRAM dist/default/debug\WD1SolderStation.X.debug.obj
+__end_of_NVM_Write 2A1C 0 CODE 0 text9 dist/default/debug\WD1SolderStation.X.debug.obj
+__Hramtop 1000 0 RAM 0 ramtop dist/default/debug\WD1SolderStation.X.debug.obj
+__size_of_NVM_Write 0 0 ABS 0 - dist/default/debug\WD1SolderStation.X.debug.obj
+__end_of_TIMER_GetSysTickFlag 2C72 0 CODE 0 text26 dist/default/debug\WD1SolderStation.X.debug.obj
+_USER_DecrementSetpoint 2BC2 0 CODE 0 text7 dist/default/debug\WD1SolderStation.X.debug.obj
+__size_of_BUTTONS_Task 0 0 ABS 0 - dist/default/debug\WD1SolderStation.X.debug.obj
+__end_of_LCD_Dec2Bcd 2516 0 CODE 0 text17 dist/default/debug\WD1SolderStation.X.debug.obj
+__activetblptr 3 0 ABS 0 - dist/default/debug\WD1SolderStation.X.debug.obj
+__end_of_USER_TemperatureFilter 2696 0 CODE 0 text2 dist/default/debug\WD1SolderStation.X.debug.obj
+__Hstruct 0 0 COMRAM 1 struct dist/default/debug\WD1SolderStation.X.debug.obj
+__size_of___lmul 0 0 ABS 0 - dist/default/debug\WD1SolderStation.X.debug.obj
+__LbssBANK0 0 0 ABS 0 bssBANK0 dist/default/debug\WD1SolderStation.X.debug.obj
+__LbssBANK1 0 0 ABS 0 bssBANK1 dist/default/debug\WD1SolderStation.X.debug.obj
+__end_of_si32_TempSensorOffset 1009 0 SMALLCONST 0 smallconst dist/default/debug\WD1SolderStation.X.debug.obj
+__Htext10 0 0 ABS 0 text10 dist/default/debug\WD1SolderStation.X.debug.obj
+__Htext11 0 0 ABS 0 text11 dist/default/debug\WD1SolderStation.X.debug.obj
+__Htext12 0 0 ABS 0 text12 dist/default/debug\WD1SolderStation.X.debug.obj
+__Htext13 0 0 ABS 0 text13 dist/default/debug\WD1SolderStation.X.debug.obj
+__Htext14 0 0 ABS 0 text14 dist/default/debug\WD1SolderStation.X.debug.obj
+__Htext15 0 0 ABS 0 text15 dist/default/debug\WD1SolderStation.X.debug.obj
+__Htext16 0 0 ABS 0 text16 dist/default/debug\WD1SolderStation.X.debug.obj
+__Htext17 0 0 ABS 0 text17 dist/default/debug\WD1SolderStation.X.debug.obj
+__Htext18 0 0 ABS 0 text18 dist/default/debug\WD1SolderStation.X.debug.obj
+__Htext19 0 0 ABS 0 text19 dist/default/debug\WD1SolderStation.X.debug.obj
+__Htext20 0 0 ABS 0 text20 dist/default/debug\WD1SolderStation.X.debug.obj
+__Htext21 0 0 ABS 0 text21 dist/default/debug\WD1SolderStation.X.debug.obj
+__Htext22 0 0 ABS 0 text22 dist/default/debug\WD1SolderStation.X.debug.obj
+__Htext23 0 0 ABS 0 text23 dist/default/debug\WD1SolderStation.X.debug.obj
+__Htext24 0 0 ABS 0 text24 dist/default/debug\WD1SolderStation.X.debug.obj
+__Htext25 0 0 ABS 0 text25 dist/default/debug\WD1SolderStation.X.debug.obj
+__Htext26 0 0 ABS 0 text26 dist/default/debug\WD1SolderStation.X.debug.obj
+__Htext27 0 0 ABS 0 text27 dist/default/debug\WD1SolderStation.X.debug.obj
+__Htext28 0 0 ABS 0 text28 dist/default/debug\WD1SolderStation.X.debug.obj
+__Htext29 0 0 ABS 0 text29 dist/default/debug\WD1SolderStation.X.debug.obj
+__Htext30 0 0 ABS 0 text30 dist/default/debug\WD1SolderStation.X.debug.obj
+__Htext31 0 0 ABS 0 text31 dist/default/debug\WD1SolderStation.X.debug.obj
+__Htext32 0 0 ABS 0 text32 dist/default/debug\WD1SolderStation.X.debug.obj
+__Htext33 0 0 ABS 0 text33 dist/default/debug\WD1SolderStation.X.debug.obj
+__Htext34 0 0 ABS 0 text34 dist/default/debug\WD1SolderStation.X.debug.obj
+__Htext35 0 0 ABS 0 text35 dist/default/debug\WD1SolderStation.X.debug.obj
+__Htext36 0 0 ABS 0 text36 dist/default/debug\WD1SolderStation.X.debug.obj
+__Htext37 0 0 ABS 0 text37 dist/default/debug\WD1SolderStation.X.debug.obj
+__Htext38 0 0 ABS 0 text38 dist/default/debug\WD1SolderStation.X.debug.obj
+__Htext39 0 0 ABS 0 text39 dist/default/debug\WD1SolderStation.X.debug.obj
+__Htext40 0 0 ABS 0 text40 dist/default/debug\WD1SolderStation.X.debug.obj
+__Htext41 0 0 ABS 0 text41 dist/default/debug\WD1SolderStation.X.debug.obj
+__Htext42 0 0 ABS 0 text42 dist/default/debug\WD1SolderStation.X.debug.obj
+__Htext43 0 0 ABS 0 text43 dist/default/debug\WD1SolderStation.X.debug.obj
+__Htext44 0 0 ABS 0 text44 dist/default/debug\WD1SolderStation.X.debug.obj
+__Htext45 0 0 ABS 0 text45 dist/default/debug\WD1SolderStation.X.debug.obj
+__Htext46 0 0 ABS 0 text46 dist/default/debug\WD1SolderStation.X.debug.obj
+__Htext47 0 0 ABS 0 text47 dist/default/debug\WD1SolderStation.X.debug.obj
+__Htext48 0 0 ABS 0 text48 dist/default/debug\WD1SolderStation.X.debug.obj
+__Htext49 0 0 ABS 0 text49 dist/default/debug\WD1SolderStation.X.debug.obj
+__Htext51 0 0 ABS 0 text51 dist/default/debug\WD1SolderStation.X.debug.obj
+__Htext52 0 0 ABS 0 text52 dist/default/debug\WD1SolderStation.X.debug.obj
+__Htext53 0 0 ABS 0 text53 dist/default/debug\WD1SolderStation.X.debug.obj
+__end_of_LCD_SetPresetDigits 1A86 0 CODE 0 text16 dist/default/debug\WD1SolderStation.X.debug.obj
+__size_of_SYSTEM_Init 0 0 ABS 0 - dist/default/debug\WD1SolderStation.X.debug.obj
+BUTTONS_Task@u16_ButtonsDebounceCounter 130 0 BANK1 1 bssBANK1 dist/default/debug\WD1SolderStation.X.debug.obj
+_PIE1bits F9D 0 ABS 0 - dist/default/debug\WD1SolderStation.X.debug.obj
+LCD_SetPresetDigits@u8_TempArray 15F 0 BANK1 1 cstackBANK1 dist/default/debug\WD1SolderStation.X.debug.obj
+_bFlag_SyncTrigger B8 0 BANK0 1 bssBANK0 dist/default/debug\WD1SolderStation.X.debug.obj
+NVM_Read@u16_Temp E5 0 BANK0 1 cstackBANK0 dist/default/debug\WD1SolderStation.X.debug.obj
+__ptext10 2012 0 CODE 0 text10 dist/default/debug\WD1SolderStation.X.debug.obj
+__ptext11 276C 0 CODE 0 text11 dist/default/debug\WD1SolderStation.X.debug.obj
+__ptext12 2C42 0 CODE 0 text12 dist/default/debug\WD1SolderStation.X.debug.obj
+__ptext13 1D7A 0 CODE 0 text13 dist/default/debug\WD1SolderStation.X.debug.obj
+__ptext14 2818 0 CODE 0 text14 dist/default/debug\WD1SolderStation.X.debug.obj
+__ptext15 2BDA 0 CODE 0 text15 dist/default/debug\WD1SolderStation.X.debug.obj
+__ptext16 1890 0 CODE 0 text16 dist/default/debug\WD1SolderStation.X.debug.obj
+__ptext17 246E 0 CODE 0 text17 dist/default/debug\WD1SolderStation.X.debug.obj
+__ptext18 295C 0 CODE 0 text18 dist/default/debug\WD1SolderStation.X.debug.obj
+__ptext19 286C 0 CODE 0 text19 dist/default/debug\WD1SolderStation.X.debug.obj
+__ptext20 1EC6 0 CODE 0 text20 dist/default/debug\WD1SolderStation.X.debug.obj
+__ptext21 2A1C 0 CODE 0 text21 dist/default/debug\WD1SolderStation.X.debug.obj
+__ptext22 2A88 0 CODE 0 text22 dist/default/debug\WD1SolderStation.X.debug.obj
+__ptext23 2B48 0 CODE 0 text23 dist/default/debug\WD1SolderStation.X.debug.obj
+__ptext24 2C4C 0 CODE 0 text24 dist/default/debug\WD1SolderStation.X.debug.obj
+__ptext25 2BF0 0 CODE 0 text25 dist/default/debug\WD1SolderStation.X.debug.obj
+__ptext26 2C6C 0 CODE 0 text26 dist/default/debug\WD1SolderStation.X.debug.obj
+__ptext27 2C04 0 CODE 0 text27 dist/default/debug\WD1SolderStation.X.debug.obj
+__ptext28 2696 0 CODE 0 text28 dist/default/debug\WD1SolderStation.X.debug.obj
+__ptext29 2C54 0 CODE 0 text29 dist/default/debug\WD1SolderStation.X.debug.obj
+__ptext30 1C18 0 CODE 0 text30 dist/default/debug\WD1SolderStation.X.debug.obj
+__ptext31 2C72 0 CODE 0 text31 dist/default/debug\WD1SolderStation.X.debug.obj
+__ptext32 2C78 0 CODE 0 text32 dist/default/debug\WD1SolderStation.X.debug.obj
+__ptext33 2910 0 CODE 0 text33 dist/default/debug\WD1SolderStation.X.debug.obj
+__ptext34 2150 0 CODE 0 text34 dist/default/debug\WD1SolderStation.X.debug.obj
+__ptext35 1A86 0 CODE 0 text35 dist/default/debug\WD1SolderStation.X.debug.obj
+__ptext36 28BE 0 CODE 0 text36 dist/default/debug\WD1SolderStation.X.debug.obj
+__ptext37 2C7E 0 CODE 0 text37 dist/default/debug\WD1SolderStation.X.debug.obj
+__ptext38 2516 0 CODE 0 text38 dist/default/debug\WD1SolderStation.X.debug.obj
+__ptext39 2C16 0 CODE 0 text39 dist/default/debug\WD1SolderStation.X.debug.obj
+__ptext40 2B06 0 CODE 0 text40 dist/default/debug\WD1SolderStation.X.debug.obj
+__ptext41 2B86 0 CODE 0 text41 dist/default/debug\WD1SolderStation.X.debug.obj
+__ptext42 299E 0 CODE 0 text42 dist/default/debug\WD1SolderStation.X.debug.obj
+__ptext43 13EC 0 CODE 0 text43 dist/default/debug\WD1SolderStation.X.debug.obj
+__ptext44 1674 0 CODE 0 text44 dist/default/debug\WD1SolderStation.X.debug.obj
+__ptext45 259A 0 CODE 0 text45 dist/default/debug\WD1SolderStation.X.debug.obj
+__ptext46 2226 0 CODE 0 text46 dist/default/debug\WD1SolderStation.X.debug.obj
+__ptext47 27C2 0 CODE 0 text47 dist/default/debug\WD1SolderStation.X.debug.obj
+__ptext48 22F2 0 CODE 0 text48 dist/default/debug\WD1SolderStation.X.debug.obj
+__ptext49 2BA4 0 CODE 0 text49 dist/default/debug\WD1SolderStation.X.debug.obj
+__ptext51 2C5C 0 CODE 0 text51 dist/default/debug\WD1SolderStation.X.debug.obj
+__ptext52 2C28 0 CODE 0 text52 dist/default/debug\WD1SolderStation.X.debug.obj
+__ptext53 2C64 0 CODE 0 text53 dist/default/debug\WD1SolderStation.X.debug.obj
+_u8_LCD_BankSelect 100F 0 SMALLCONST 0 smallconst dist/default/debug\WD1SolderStation.X.debug.obj
+_NVM_Write 29DE 0 CODE 0 text9 dist/default/debug\WD1SolderStation.X.debug.obj
+___aldiv 22F2 0 CODE 0 text48 dist/default/debug\WD1SolderStation.X.debug.obj
+__pintcode_body 23BE 0 CODE 0 intcode_body dist/default/debug\WD1SolderStation.X.debug.obj
+___lldiv 259A 0 CODE 0 text45 dist/default/debug\WD1SolderStation.X.debug.obj
+___lwdiv 286C 0 CODE 0 text19 dist/default/debug\WD1SolderStation.X.debug.obj
+___lwmod 295C 0 CODE 0 text18 dist/default/debug\WD1SolderStation.X.debug.obj
+__Lbank10 0 0 ABS 0 bank10 dist/default/debug\WD1SolderStation.X.debug.obj
+__Lbank11 0 0 ABS 0 bank11 dist/default/debug\WD1SolderStation.X.debug.obj
+__Lbank12 0 0 ABS 0 bank12 dist/default/debug\WD1SolderStation.X.debug.obj
+__Lbank13 0 0 ABS 0 bank13 dist/default/debug\WD1SolderStation.X.debug.obj
+__Lbank14 0 0 ABS 0 bank14 dist/default/debug\WD1SolderStation.X.debug.obj
+__Lbank15 0 0 ABS 0 bank15 dist/default/debug\WD1SolderStation.X.debug.obj
+__Lbigbss 0 0 BIGRAM 1 bigbss dist/default/debug\WD1SolderStation.X.debug.obj
+__Lbigram 0 0 ABS 0 bigram dist/default/debug\WD1SolderStation.X.debug.obj
+__size_of_NVM_Init 0 0 ABS 0 - dist/default/debug\WD1SolderStation.X.debug.obj
+__size_of_NVM_Read 0 0 ABS 0 - dist/default/debug\WD1SolderStation.X.debug.obj
+__size_of_NVM_Task 0 0 ABS 0 - dist/default/debug\WD1SolderStation.X.debug.obj
+__size_of_TIMER_ResetSysTickFlag 0 0 ABS 0 - dist/default/debug\WD1SolderStation.X.debug.obj
+___lmul@multiplier 1 0 COMRAM 1 cstackCOMRAM dist/default/debug\WD1SolderStation.X.debug.obj
+__CFG_BORV$3 0 0 ABS 0 - dist/default/debug\WD1SolderStation.X.debug.obj
+_s16_TemperatureCelcius 93 0 BANK0 1 bssBANK0 dist/default/debug\WD1SolderStation.X.debug.obj
+?_TIMER_GetSysTick E3 0 BANK0 1 cstackBANK0 dist/default/debug\WD1SolderStation.X.debug.obj
+LCD_SetMainDigits@u16_MainData E7 0 BANK0 1 cstackBANK0 dist/default/debug\WD1SolderStation.X.debug.obj
+_si32_TempSensorOffset 1005 0 SMALLCONST 0 smallconst dist/default/debug\WD1SolderStation.X.debug.obj
+?_main 16D 0 BANK1 1 cstackBANK1 dist/default/debug\WD1SolderStation.X.debug.obj
+__Lcomram 0 0 ABS 0 comram dist/default/debug\WD1SolderStation.X.debug.obj
+__Lconfig 300000 0 CONFIG 0 config dist/default/debug\WD1SolderStation.X.debug.obj
+__end_of_BUTTONS_Task 1674 0 CODE 0 text43 dist/default/debug\WD1SolderStation.X.debug.obj
+NVM_Write@u8_Address E7 0 BANK0 1 cstackBANK0 dist/default/debug\WD1SolderStation.X.debug.obj
+_LATAbits F89 0 ABS 0 - dist/default/debug\WD1SolderStation.X.debug.obj
+_LATDbits F8C 0 ABS 0 - dist/default/debug\WD1SolderStation.X.debug.obj
+__end_of_USER_FastDecrementSetpoint 2AE4 0 CODE 0 text6 dist/default/debug\WD1SolderStation.X.debug.obj
+__Lfarbss 0 0 FARRAM 0 farbss dist/default/debug\WD1SolderStation.X.debug.obj
+___lwdiv@divisor 3 0 COMRAM 1 cstackCOMRAM dist/default/debug\WD1SolderStation.X.debug.obj
+__Lfardata 0 0 FARRAM 0 fardata dist/default/debug\WD1SolderStation.X.debug.obj
+_LCD_SetIcons 2A1C 0 CODE 0 text21 dist/default/debug\WD1SolderStation.X.debug.obj
+BUTTONS_GetState@t_Buttons E3 0 BANK0 1 cstackBANK0 dist/default/debug\WD1SolderStation.X.debug.obj
+__size_of_LCD_Update 0 0 ABS 0 - dist/default/debug\WD1SolderStation.X.debug.obj
+__end_of_TIMER_Init 2C04 0 CODE 0 text25 dist/default/debug\WD1SolderStation.X.debug.obj
+__end_of_ADC_GetTemperature 2C42 0 CODE 0 text3 dist/default/debug\WD1SolderStation.X.debug.obj
+_u8_LCD_Blink 1010 0 SMALLCONST 0 smallconst dist/default/debug\WD1SolderStation.X.debug.obj
+_u8_LCD_State AD 0 BANK0 1 bssBANK0 dist/default/debug\WD1SolderStation.X.debug.obj
+stackhi EEE 0 ABS 0 - dist/default/debug\startup.obj
+stacklo 173 0 ABS 0 - dist/default/debug\startup.obj
+__Lintcode 8 0 CODE 0 intcode dist/default/debug\WD1SolderStation.X.debug.obj
+_LCD_SetData 28BE 0 CODE 0 text36 dist/default/debug\WD1SolderStation.X.debug.obj
+__Lintret 0 0 ABS 0 intret dist/default/debug\WD1SolderStation.X.debug.obj
+__Lirdata 0 0 CODE 0 irdata dist/default/debug\WD1SolderStation.X.debug.obj
+_ADCON0bits FC2 0 ABS 0 - dist/default/debug\WD1SolderStation.X.debug.obj
+BUTTONS_Task@u16_ButtonsHoldCounter 120 0 BANK1 1 bssBANK1 dist/default/debug\WD1SolderStation.X.debug.obj
+USER_Task@u16_TemporaryCurrentTemperature A3 0 BANK0 1 bssBANK0 dist/default/debug\WD1SolderStation.X.debug.obj
+__CFG_LVP$OFF 0 0 ABS 0 - dist/default/debug\WD1SolderStation.X.debug.obj
+PWM_Task@u8_PwmCounter B6 0 BANK0 1 bssBANK0 dist/default/debug\WD1SolderStation.X.debug.obj
+__size_of_SYSTEM_EnableInterrupts 0 0 ABS 0 - dist/default/debug\WD1SolderStation.X.debug.obj
+__Lspace_0 0 0 ABS 0 - dist/default/debug\WD1SolderStation.X.debug.obj
+__Lspace_1 0 0 ABS 0 - dist/default/debug\WD1SolderStation.X.debug.obj
+__Lspace_2 0 0 ABS 0 - dist/default/debug\WD1SolderStation.X.debug.obj
+__HcstackBANK0 0 0 ABS 0 cstackBANK0 dist/default/debug\WD1SolderStation.X.debug.obj
+__HcstackBANK1 0 0 ABS 0 cstackBANK1 dist/default/debug\WD1SolderStation.X.debug.obj
+_PIR1bits F9E 0 ABS 0 - dist/default/debug\WD1SolderStation.X.debug.obj
+USER_Task@u16_TemporarySaveSetpoint A1 0 BANK0 1 bssBANK0 dist/default/debug\WD1SolderStation.X.debug.obj
+__LcstackCOMRAM 0 0 ABS 0 cstackCOMRAM dist/default/debug\WD1SolderStation.X.debug.obj
+__end_of_ADC_GetVoltageMV 2C4C 0 CODE 0 text12 dist/default/debug\WD1SolderStation.X.debug.obj
+LCD_SetPresetDigits@bFlag_Number EA 0 BANK0 1 cstackBANK0 dist/default/debug\WD1SolderStation.X.debug.obj
+ADC_GetVoltageFiltered@u16_Input E3 0 BANK0 1 cstackBANK0 dist/default/debug\WD1SolderStation.X.debug.obj
+LCD_SetMainDigits@u8_TempArray 15F 0 BANK1 1 cstackBANK1 dist/default/debug\WD1SolderStation.X.debug.obj
+end_of_initialization 2AFC 0 CODE 0 cinit dist/default/debug\WD1SolderStation.X.debug.obj
+__Lnvrram 0 0 COMRAM 1 nvrram dist/default/debug\WD1SolderStation.X.debug.obj
+__Hintentry 0 0 ABS 0 intentry dist/default/debug\WD1SolderStation.X.debug.obj
+LCD_SetIcons@u8_Icon E7 0 BANK0 1 cstackBANK0 dist/default/debug\WD1SolderStation.X.debug.obj
+LCD_SetIcons@u8_Temp E8 0 BANK0 1 cstackBANK0 dist/default/debug\WD1SolderStation.X.debug.obj
+?___aldiv D 0 COMRAM 1 cstackCOMRAM dist/default/debug\WD1SolderStation.X.debug.obj
+_NVM_Init 2910 0 CODE 0 text33 dist/default/debug\WD1SolderStation.X.debug.obj
+___lwdiv@dividend 1 0 COMRAM 1 cstackCOMRAM dist/default/debug\WD1SolderStation.X.debug.obj
+_NVM_Read 2818 0 CODE 0 text14 dist/default/debug\WD1SolderStation.X.debug.obj
+_NVM_Task 1C18 0 CODE 0 text30 dist/default/debug\WD1SolderStation.X.debug.obj
+__size_of_ADC_GetVoltageMV 0 0 ABS 0 - dist/default/debug\WD1SolderStation.X.debug.obj
+__Lparam0 0 0 BANK0 1 param0 dist/default/debug\WD1SolderStation.X.debug.obj
+__size_of_LCD_GetData 0 0 ABS 0 - dist/default/debug\WD1SolderStation.X.debug.obj
+?___lldiv 1B 0 COMRAM 1 cstackCOMRAM dist/default/debug\WD1SolderStation.X.debug.obj
+?___lwdiv 1 0 COMRAM 1 cstackCOMRAM dist/default/debug\WD1SolderStation.X.debug.obj
+?___lwmod 8 0 COMRAM 1 cstackCOMRAM dist/default/debug\WD1SolderStation.X.debug.obj
+NVM_Task@u16_TempWriteData 9B 0 BANK0 1 bssBANK0 dist/default/debug\WD1SolderStation.X.debug.obj
+NVM_Task@u8_TempWriteFlag B9 0 BANK0 1 bssBANK0 dist/default/debug\WD1SolderStation.X.debug.obj
+__Hreset_vec 6 0 CODE 0 reset_vec dist/default/debug\WD1SolderStation.X.debug.obj
+_ADC_GetTemperature 2C38 0 CODE 0 text3 dist/default/debug\WD1SolderStation.X.debug.obj
+__HbssBANK0 0 0 ABS 0 bssBANK0 dist/default/debug\WD1SolderStation.X.debug.obj
+__HbssBANK1 0 0 ABS 0 bssBANK1 dist/default/debug\WD1SolderStation.X.debug.obj
+__size_of_LCD_SetIcons 0 0 ABS 0 - dist/default/debug\WD1SolderStation.X.debug.obj
+__Lramtop 1000 0 RAM 0 ramtop dist/default/debug\WD1SolderStation.X.debug.obj
+__size_of_PWM_Task 0 0 ABS 0 - dist/default/debug\WD1SolderStation.X.debug.obj
+USER_Task@bFlag_AutoOff C0 0 BANK0 1 bssBANK0 dist/default/debug\WD1SolderStation.X.debug.obj
+__pcinit 2AE4 0 CODE 0 cinit dist/default/debug\WD1SolderStation.X.debug.obj
+_TIMER_SetSysTickFlag 2C5C 0 CODE 0 text51 dist/default/debug\WD1SolderStation.X.debug.obj
+__end_of_NVM_Init 295C 0 CODE 0 text33 dist/default/debug\WD1SolderStation.X.debug.obj
+__end_of_NVM_Read 286C 0 CODE 0 text14 dist/default/debug\WD1SolderStation.X.debug.obj
+__end_of_NVM_Task 1D7A 0 CODE 0 text30 dist/default/debug\WD1SolderStation.X.debug.obj
+__ptext0 2702 0 CODE 0 text0 dist/default/debug\WD1SolderStation.X.debug.obj
+__ptext1 1014 0 CODE 0 text1 dist/default/debug\WD1SolderStation.X.debug.obj
+__ptext2 261C 0 CODE 0 text2 dist/default/debug\WD1SolderStation.X.debug.obj
+__ptext3 2C38 0 CODE 0 text3 dist/default/debug\WD1SolderStation.X.debug.obj
+__ptext4 2B28 0 CODE 0 text4 dist/default/debug\WD1SolderStation.X.debug.obj
+__ptext5 2A56 0 CODE 0 text5 dist/default/debug\WD1SolderStation.X.debug.obj
+__ptext6 2ABA 0 CODE 0 text6 dist/default/debug\WD1SolderStation.X.debug.obj
+__ptext7 2BC2 0 CODE 0 text7 dist/default/debug\WD1SolderStation.X.debug.obj
+__ptext8 2B68 0 CODE 0 text8 dist/default/debug\WD1SolderStation.X.debug.obj
+__ptext9 29DE 0 CODE 0 text9 dist/default/debug\WD1SolderStation.X.debug.obj
+LCD_Init@u8_Temp ED 0 BANK0 1 cstackBANK0 dist/default/debug\WD1SolderStation.X.debug.obj
+_PWM_SetDutyCycle 2B68 0 CODE 0 text8 dist/default/debug\WD1SolderStation.X.debug.obj
+__Lstruct 0 0 COMRAM 1 struct dist/default/debug\WD1SolderStation.X.debug.obj
+main@u32_TimeStamp 15B 0 BANK1 1 bssBANK1 dist/default/debug\WD1SolderStation.X.debug.obj
+__Ltext10 0 0 ABS 0 text10 dist/default/debug\WD1SolderStation.X.debug.obj
+__Ltext11 0 0 ABS 0 text11 dist/default/debug\WD1SolderStation.X.debug.obj
+__Ltext12 0 0 ABS 0 text12 dist/default/debug\WD1SolderStation.X.debug.obj
+__Ltext13 0 0 ABS 0 text13 dist/default/debug\WD1SolderStation.X.debug.obj
+__Ltext14 0 0 ABS 0 text14 dist/default/debug\WD1SolderStation.X.debug.obj
+__Ltext15 0 0 ABS 0 text15 dist/default/debug\WD1SolderStation.X.debug.obj
+__Ltext16 0 0 ABS 0 text16 dist/default/debug\WD1SolderStation.X.debug.obj
+__Ltext17 0 0 ABS 0 text17 dist/default/debug\WD1SolderStation.X.debug.obj
+__Ltext18 0 0 ABS 0 text18 dist/default/debug\WD1SolderStation.X.debug.obj
+__Ltext19 0 0 ABS 0 text19 dist/default/debug\WD1SolderStation.X.debug.obj
+__Ltext20 0 0 ABS 0 text20 dist/default/debug\WD1SolderStation.X.debug.obj
+__Ltext21 0 0 ABS 0 text21 dist/default/debug\WD1SolderStation.X.debug.obj
+__Ltext22 0 0 ABS 0 text22 dist/default/debug\WD1SolderStation.X.debug.obj
+__Ltext23 0 0 ABS 0 text23 dist/default/debug\WD1SolderStation.X.debug.obj
+__Ltext24 0 0 ABS 0 text24 dist/default/debug\WD1SolderStation.X.debug.obj
+__Ltext25 0 0 ABS 0 text25 dist/default/debug\WD1SolderStation.X.debug.obj
+__Ltext26 0 0 ABS 0 text26 dist/default/debug\WD1SolderStation.X.debug.obj
+__Ltext27 0 0 ABS 0 text27 dist/default/debug\WD1SolderStation.X.debug.obj
+__Ltext28 0 0 ABS 0 text28 dist/default/debug\WD1SolderStation.X.debug.obj
+__Ltext29 0 0 ABS 0 text29 dist/default/debug\WD1SolderStation.X.debug.obj
+__Ltext30 0 0 ABS 0 text30 dist/default/debug\WD1SolderStation.X.debug.obj
+__Ltext31 0 0 ABS 0 text31 dist/default/debug\WD1SolderStation.X.debug.obj
+__Ltext32 0 0 ABS 0 text32 dist/default/debug\WD1SolderStation.X.debug.obj
+__Ltext33 0 0 ABS 0 text33 dist/default/debug\WD1SolderStation.X.debug.obj
+__Ltext34 0 0 ABS 0 text34 dist/default/debug\WD1SolderStation.X.debug.obj
+__Ltext35 0 0 ABS 0 text35 dist/default/debug\WD1SolderStation.X.debug.obj
+__Ltext36 0 0 ABS 0 text36 dist/default/debug\WD1SolderStation.X.debug.obj
+__Ltext37 0 0 ABS 0 text37 dist/default/debug\WD1SolderStation.X.debug.obj
+__Ltext38 0 0 ABS 0 text38 dist/default/debug\WD1SolderStation.X.debug.obj
+__Ltext39 0 0 ABS 0 text39 dist/default/debug\WD1SolderStation.X.debug.obj
+__Ltext40 0 0 ABS 0 text40 dist/default/debug\WD1SolderStation.X.debug.obj
+__Ltext41 0 0 ABS 0 text41 dist/default/debug\WD1SolderStation.X.debug.obj
+__Ltext42 0 0 ABS 0 text42 dist/default/debug\WD1SolderStation.X.debug.obj
+__Ltext43 0 0 ABS 0 text43 dist/default/debug\WD1SolderStation.X.debug.obj
+__Ltext44 0 0 ABS 0 text44 dist/default/debug\WD1SolderStation.X.debug.obj
+__Ltext45 0 0 ABS 0 text45 dist/default/debug\WD1SolderStation.X.debug.obj
+__Ltext46 0 0 ABS 0 text46 dist/default/debug\WD1SolderStation.X.debug.obj
+__Ltext47 0 0 ABS 0 text47 dist/default/debug\WD1SolderStation.X.debug.obj
+__Ltext48 0 0 ABS 0 text48 dist/default/debug\WD1SolderStation.X.debug.obj
+__Ltext49 0 0 ABS 0 text49 dist/default/debug\WD1SolderStation.X.debug.obj
+__Ltext51 0 0 ABS 0 text51 dist/default/debug\WD1SolderStation.X.debug.obj
+__Ltext52 0 0 ABS 0 text52 dist/default/debug\WD1SolderStation.X.debug.obj
+__Ltext53 0 0 ABS 0 text53 dist/default/debug\WD1SolderStation.X.debug.obj
+__ramtop 1000 0 RAM 0 ramtop dist/default/debug\startup.obj
+___aldiv@dividend D 0 COMRAM 1 cstackCOMRAM dist/default/debug\WD1SolderStation.X.debug.obj
+_PWM_ResetSyncTrigger 2C54 0 CODE 0 text29 dist/default/debug\WD1SolderStation.X.debug.obj
+_u32_AdcLsb 1001 0 SMALLCONST 0 smallconst dist/default/debug\WD1SolderStation.X.debug.obj
+_u8_ButtonSignal 8A 0 BANK0 1 bssBANK0 dist/default/debug\WD1SolderStation.X.debug.obj
+__Lpowerup E 0 CODE 0 powerup dist/default/debug\WD1SolderStation.X.debug.obj
+__Leeprom_data 0 0 EEDATA 0 eeprom_data dist/default/debug\WD1SolderStation.X.debug.obj
+_DebugVariable B3 0 BANK0 1 bssBANK0 dist/default/debug\WD1SolderStation.X.debug.obj
+USER_FastDecrementSetpoint@u8_FastDecrementCounter BE 0 BANK0 1 bssBANK0 dist/default/debug\WD1SolderStation.X.debug.obj
+ADC_Task@si32_AdcTemporary 169 0 BANK1 1 cstackBANK1 dist/default/debug\WD1SolderStation.X.debug.obj
+__psmallconst 1000 0 SMALLCONST 0 smallconst dist/default/debug\WD1SolderStation.X.debug.obj
+I2C_Start@u16_Timeout EA 0 BANK0 1 cstackBANK0 dist/default/debug\WD1SolderStation.X.debug.obj
+__Lreset_vec 0 0 CODE 0 reset_vec dist/default/debug\WD1SolderStation.X.debug.obj
+__end_of_LCD_SetIcons 2A56 0 CODE 0 text21 dist/default/debug\WD1SolderStation.X.debug.obj
+_SYSTEM_DisableInterrupts 2C78 0 CODE 0 text32 dist/default/debug\WD1SolderStation.X.debug.obj
+__size_of_ADC_GetVoltageFiltered 0 0 ABS 0 - dist/default/debug\WD1SolderStation.X.debug.obj
+__end_of_u8_LCD_Blink 1011 0 SMALLCONST 0 smallconst dist/default/debug\WD1SolderStation.X.debug.obj
+ADC_GetVoltageFiltered@u16_OutputBefore AF 0 BANK0 1 bssBANK0 dist/default/debug\WD1SolderStation.X.debug.obj
+___param_bank 0 0 ABS 0 - dist/default/debug\WD1SolderStation.X.debug.obj
+__CFG_WDT$OFF 0 0 ABS 0 - dist/default/debug\WD1SolderStation.X.debug.obj
+__Hbigdata 0 0 BIGRAM 1 bigdata dist/default/debug\WD1SolderStation.X.debug.obj
+__end_of__initialization 2AFC 0 CODE 0 cinit dist/default/debug\WD1SolderStation.X.debug.obj
+__size_of_LCD_Dec2Bcd 0 0 ABS 0 - dist/default/debug\WD1SolderStation.X.debug.obj
+_INTCON2 FF1 0 ABS 0 - dist/default/debug\WD1SolderStation.X.debug.obj
+_INTCON3 FF0 0 ABS 0 - dist/default/debug\WD1SolderStation.X.debug.obj
+LCD_Clear@u8_Temp E7 0 BANK0 1 cstackBANK0 dist/default/debug\WD1SolderStation.X.debug.obj
+__CFG_WRT0$OFF 0 0 ABS 0 - dist/default/debug\WD1SolderStation.X.debug.obj
+__CFG_WRT1$OFF 0 0 ABS 0 - dist/default/debug\WD1SolderStation.X.debug.obj
+__CFG_WRT2$OFF 0 0 ABS 0 - dist/default/debug\WD1SolderStation.X.debug.obj
+__CFG_WRT3$OFF 0 0 ABS 0 - dist/default/debug\WD1SolderStation.X.debug.obj
+NVM_Read@u16_Address E3 0 BANK0 1 cstackBANK0 dist/default/debug\WD1SolderStation.X.debug.obj
+_u8_DutyCycle B7 0 BANK0 1 bssBANK0 dist/default/debug\WD1SolderStation.X.debug.obj
+_TIMER_IncrementSysTick 2C28 0 CODE 0 text52 dist/default/debug\WD1SolderStation.X.debug.obj
+__CFG_WRTB$OFF 0 0 ABS 0 - dist/default/debug\WD1SolderStation.X.debug.obj
+__Libigdata 0 0 CODE 0 ibigdata dist/default/debug\WD1SolderStation.X.debug.obj
+__CFG_WRTC$OFF 0 0 ABS 0 - dist/default/debug\WD1SolderStation.X.debug.obj
+__CFG_WRTD$OFF 0 0 ABS 0 - dist/default/debug\WD1SolderStation.X.debug.obj
+LCD_SetMainDigits@bFlag_Number E9 0 BANK0 1 cstackBANK0 dist/default/debug\WD1SolderStation.X.debug.obj
+LCD_Task@u8_Status C6 0 BANK0 1 bssBANK0 dist/default/debug\WD1SolderStation.X.debug.obj
+__Lclrtext 0 0 ABS 0 clrtext dist/default/debug\WD1SolderStation.X.debug.obj
+_USER_IncrementSetpoint 2B28 0 CODE 0 text4 dist/default/debug\WD1SolderStation.X.debug.obj
+___lmul@product 9 0 COMRAM 1 cstackCOMRAM dist/default/debug\WD1SolderStation.X.debug.obj
+_u16_SyncTime 97 0 BANK0 1 bssBANK0 dist/default/debug\WD1SolderStation.X.debug.obj
+__end_of_USER_DecrementSetpoint 2BDA 0 CODE 0 text7 dist/default/debug\WD1SolderStation.X.debug.obj
+NVM_Init@u16_TempData E3 0 BANK0 1 cstackBANK0 dist/default/debug\WD1SolderStation.X.debug.obj
+___lmul@multiplicand 5 0 COMRAM 1 cstackCOMRAM dist/default/debug\WD1SolderStation.X.debug.obj
+__CFG_PWRT$OFF 0 0 ABS 0 - dist/default/debug\WD1SolderStation.X.debug.obj
+___lldiv@quotient 23 0 COMRAM 1 cstackCOMRAM dist/default/debug\WD1SolderStation.X.debug.obj
+USER_Task@u16_AdcPT20Voltage 162 0 BANK1 1 cstackBANK1 dist/default/debug\WD1SolderStation.X.debug.obj
+__pcstackCOMRAM 1 0 COMRAM 1 cstackCOMRAM dist/default/debug\WD1SolderStation.X.debug.obj
+__end_of_LCD_Bcd2Segment 2012 0 CODE 0 text20 dist/default/debug\WD1SolderStation.X.debug.obj
+_PWM_Task 2696 0 CODE 0 text28 dist/default/debug\WD1SolderStation.X.debug.obj
+_SSPCON1 FC6 0 ABS 0 - dist/default/debug\WD1SolderStation.X.debug.obj
+_SSPCON2 FC5 0 ABS 0 - dist/default/debug\WD1SolderStation.X.debug.obj
+_SSPSTAT FC7 0 ABS 0 - dist/default/debug\WD1SolderStation.X.debug.obj
+__size_of_USER_TemperatureFilter 0 0 ABS 0 - dist/default/debug\WD1SolderStation.X.debug.obj
+___aldiv@counter 15 0 COMRAM 1 cstackCOMRAM dist/default/debug\WD1SolderStation.X.debug.obj
+_ADC_Task$1620 163 0 BANK1 1 cstackBANK1 dist/default/debug\WD1SolderStation.X.debug.obj
+__end_of_main 276C 0 CODE 0 text0 dist/default/debug\WD1SolderStation.X.debug.obj
+__pintcode 8 0 CODE 0 intcode dist/default/debug\WD1SolderStation.X.debug.obj
+USER_Init@u16_StartupCounter 162 0 BANK1 1 cstackBANK1 dist/default/debug\WD1SolderStation.X.debug.obj
+__size_of_USER_FastDecrementSetpoint 0 0 ABS 0 - dist/default/debug\WD1SolderStation.X.debug.obj
+_ADRES FC3 0 ABS 0 - dist/default/debug\WD1SolderStation.X.debug.obj
+__size_of_LCD_SetMainDigits 0 0 ABS 0 - dist/default/debug\WD1SolderStation.X.debug.obj
+_EEADR FA9 0 ABS 0 - dist/default/debug\WD1SolderStation.X.debug.obj
+__end_of_PWM_SetSyncTrigger 2C6C 0 CODE 0 text53 dist/default/debug\WD1SolderStation.X.debug.obj
+_PLLEN 7CDE 0 ABS 0 - dist/default/debug\WD1SolderStation.X.debug.obj
+_PORTA F80 0 ABS 0 - dist/default/debug\WD1SolderStation.X.debug.obj
+_PORTB F81 0 ABS 0 - dist/default/debug\WD1SolderStation.X.debug.obj
+_PORTC F82 0 ABS 0 - dist/default/debug\WD1SolderStation.X.debug.obj
+_PORTD F83 0 ABS 0 - dist/default/debug\WD1SolderStation.X.debug.obj
+LCD_Bcd2Segment@u8_DigitType E3 0 BANK0 1 cstackBANK0 dist/default/debug\WD1SolderStation.X.debug.obj
+_T2CON FCA 0 ABS 0 - dist/default/debug\WD1SolderStation.X.debug.obj
+_SYSTEM_Init 2C04 0 CODE 0 text27 dist/default/debug\WD1SolderStation.X.debug.obj
+_TRISA F92 0 ABS 0 - dist/default/debug\WD1SolderStation.X.debug.obj
+_TRISB F93 0 ABS 0 - dist/default/debug\WD1SolderStation.X.debug.obj
+_TRISC F94 0 ABS 0 - dist/default/debug\WD1SolderStation.X.debug.obj
+_TRISD F95 0 ABS 0 - dist/default/debug\WD1SolderStation.X.debug.obj
+__end_of_PWM_Task 2702 0 CODE 0 text28 dist/default/debug\WD1SolderStation.X.debug.obj
+__CFG_CP0$OFF 0 0 ABS 0 - dist/default/debug\WD1SolderStation.X.debug.obj
+__CFG_CP1$OFF 0 0 ABS 0 - dist/default/debug\WD1SolderStation.X.debug.obj
+__HRAM 0 0 ABS 0 - dist/default/debug\WD1SolderStation.X.debug.obj
+__Hbss 0 0 RAM 1 bss dist/default/debug\WD1SolderStation.X.debug.obj
+__Hram 0 0 ABS 0 ram dist/default/debug\WD1SolderStation.X.debug.obj
+__Hsfr 0 0 ABS 0 sfr dist/default/debug\WD1SolderStation.X.debug.obj
+__LRAM 1 0 ABS 0 - dist/default/debug\WD1SolderStation.X.debug.obj
+__Lbss 0 0 RAM 1 bss dist/default/debug\WD1SolderStation.X.debug.obj
+__Lram 0 0 ABS 0 ram dist/default/debug\WD1SolderStation.X.debug.obj
+__Lsfr 0 0 ABS 0 sfr dist/default/debug\WD1SolderStation.X.debug.obj
+__CFG_CP2$OFF 0 0 ABS 0 - dist/default/debug\WD1SolderStation.X.debug.obj
+__CFG_CP3$OFF 0 0 ABS 0 - dist/default/debug\WD1SolderStation.X.debug.obj
+LCD_Task@bFlag_SecondaryData C5 0 BANK0 1 bssBANK0 dist/default/debug\WD1SolderStation.X.debug.obj
+__end_of_u32_AdcLsb 1005 0 SMALLCONST 0 smallconst dist/default/debug\WD1SolderStation.X.debug.obj
+__CFG_CPB$OFF 0 0 ABS 0 - dist/default/debug\WD1SolderStation.X.debug.obj
+__CFG_CPD$OFF 0 0 ABS 0 - dist/default/debug\WD1SolderStation.X.debug.obj
+__end_of_USER_FastIncrementSetpoint 2A88 0 CODE 0 text5 dist/default/debug\WD1SolderStation.X.debug.obj
+__size_of_ISR 0 0 ABS 0 - dist/default/debug\WD1SolderStation.X.debug.obj
+__initialization 2AE4 0 CODE 0 cinit dist/default/debug\WD1SolderStation.X.debug.obj
+__end_of_PWM_SetDutyCycle 2B86 0 CODE 0 text8 dist/default/debug\WD1SolderStation.X.debug.obj
+I2C_Start@u8_Address E9 0 BANK0 1 cstackBANK0 dist/default/debug\WD1SolderStation.X.debug.obj
+PWM_Task@u8_PeriodCount B5 0 BANK0 1 bssBANK0 dist/default/debug\WD1SolderStation.X.debug.obj
+__pbssBANK0 80 0 BANK0 1 bssBANK0 dist/default/debug\WD1SolderStation.X.debug.obj
+__pbssBANK1 100 0 BANK1 1 bssBANK1 dist/default/debug\WD1SolderStation.X.debug.obj
+_u16_AdcVoltageMV B1 0 BANK0 1 bssBANK0 dist/default/debug\WD1SolderStation.X.debug.obj
+_u16_NVM_WriteBuffer 140 0 BANK1 1 bssBANK1 dist/default/debug\WD1SolderStation.X.debug.obj
+USER_Init@u16_TempNvmData 164 0 BANK1 1 cstackBANK1 dist/default/debug\WD1SolderStation.X.debug.obj
+__Hfardata 0 0 FARRAM 0 fardata dist/default/debug\WD1SolderStation.X.debug.obj
+__Hsmallconst 1014 0 SMALLCONST 0 smallconst dist/default/debug\WD1SolderStation.X.debug.obj
+__size_of_PWM_SetDutyCycle 0 0 ABS 0 - dist/default/debug\WD1SolderStation.X.debug.obj
+__Lifardata 0 0 CODE 0 ifardata dist/default/debug\WD1SolderStation.X.debug.obj
+__size_of_TIMER_Init 0 0 ABS 0 - dist/default/debug\WD1SolderStation.X.debug.obj
+__size_of_LCD_Init 0 0 ABS 0 - dist/default/debug\WD1SolderStation.X.debug.obj
+__size_of_LCD_Task 0 0 ABS 0 - dist/default/debug\WD1SolderStation.X.debug.obj
+__Hintsave_regs 0 0 BIGRAM 1 intsave_regs dist/default/debug\WD1SolderStation.X.debug.obj
+__Hintcode E 0 CODE 0 intcode dist/default/debug\WD1SolderStation.X.debug.obj
+_u32_SysTickCounter 157 0 BANK1 1 bssBANK1 dist/default/debug\WD1SolderStation.X.debug.obj
+_TIMER_GetSysTickFlag 2C6C 0 CODE 0 text26 dist/default/debug\WD1SolderStation.X.debug.obj
+_LCD_Bcd2Segment 1EC6 0 CODE 0 text20 dist/default/debug\WD1SolderStation.X.debug.obj
+# %SPLITSTAB Section
+# This section enumerates all the psect splits performed by the assembler.
+# The beginning of the section is indicated by %SPLITSTAB.
+# Each line is a record a particular split, where the parent psect is on
+# the left and the child on the right.  Note that a child psect is always
+# split form the top of the parent psect. All splits from a given parent
+# are listed in the order in which they occurred.
+%SPLITSTAB
+# %DABS Section
+# This section contains a table of all usuage of the assember
+# directive DABS in the program. Each line has the following format:
+#   <name> <space> <address> <size>
+# If the DABS was originally labelled then that shall be <name>,
+# otherwise name will be "-".  The <space> number is in decimal.
+# <address> and <size> are in byte units as unqaulified hexadecimal
+%DABS
+# %SEGMENTS Section
+# This sections enumerates the segments of the program.  Each segment
+# is described on a single line as follows:
+#    <name> <space> <link address> <file address> <size> <delta>
+# Addresses and size are in unqualified hexadecimal.  The link address
+# and size are in units of delta. The file address is in units of bytes.
+# All other numeric quantities are in decimal.
+%SEGMENTS
+text1 0 1014 1014 1C6E 1
+cstackCOMRAM 1 1 1 28 1
+reset_vec 0 0 0 6 1
+bssBANK0 1 80 80 6E 1
+bssBANK1 1 100 100 73 1
+intcode 0 8 8 A 1
+smallconst 0 1000 1000 14 1
+config 0 300000 300000 E 1
