@@ -2,7 +2,6 @@
 
 Control software for Weller WD1M solder station with PIC18F4620
 
-[images/solderstation.jpg]
 
 This project started because of a defect WD1M solder station. First tests showed that the communication to LCD doesn't work anymore and I could even measure a control signal at the TRIACs. 
 The LCD is driven by a PCF8576 LCD-Driver chip which communicates over I2C. An Arduino board and some code later, the LCD displayed something. This lead to the result that the microcontroller a PIC18F4620 was dead. 
