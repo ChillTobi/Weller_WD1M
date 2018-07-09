@@ -2,9 +2,8 @@
 
 Control software for Weller WD1M solder station with PIC18F4620
 
-![wd1m](ChillTobi.github.com/Weller_WD1M/imgages/solderstation.jpg)
+![wd1m](https://github.com/ChillTobi/Weller_WD1M/tree/master/images/solderstation.jpg)
 
-(https://github.com/ChillTobi/Weller_WD1M/tree/master/images/solderstation.jpg)
 
 
 This project started because of a defect WD1M solder station. First tests showed that the communication to LCD doesn't work anymore and I could even measure a control signal at the TRIACs. 
